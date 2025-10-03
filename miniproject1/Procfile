@@ -1,0 +1,2 @@
+web: gunicorn first.wsgi:application --chdir miniproject1 --bind 0.0.0.0:$PORT
+

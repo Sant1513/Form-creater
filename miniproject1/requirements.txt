@@ -1,5 +1,10 @@
 langchain_community
 pytesseract
 pdf2image
+django==5.0.7
+gunicorn
+whitenoise
+dj-database-url
+Pillow
 # torch
 # transformer

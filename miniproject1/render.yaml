@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: form-creater
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r miniproject1/requirements.txt
+    startCommand: gunicorn first.wsgi:application --chdir miniproject1 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: ALLOWED_HOSTS
+        value: "*"
+    staticPublishPath: miniproject1/staticfiles
+
