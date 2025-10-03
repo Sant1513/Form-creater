@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Visualization</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles7.css'%}">
+</head>
+<body>
+    <h1>Embedding Visualization</h1>
+    <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+    <button id="fetch-visualization">Load Visualization</button>
+
+    <!-- First section: Data Points Representation -->
+    <h1 class="headings" style="visibility: hidden;">Data Point Representation</h1>
+    <div id="tsne-container">
+        
+    </div>
+    <h1 class="headings" style="visibility: hidden;">Comparison between HDBSCAN and Cosine Similarity</h1>
+    <!-- Second section: HDBSCAN and Cosine Similarity -->
+    <div id="hdbscan-cosine-container">
+        
+    </div>
+
+    <script>
+        function getCsrfToken() {
+            return document.getElementById('csrf-token').value;
+        }
+        const name = {"subject_name":localStorage.getItem("subject_name")};
+        console.log(name); 
+        $(document).ready(function() {
+            $('#fetch-visualization').click(function() {
+                $.ajax({
+                    url: '/visualize/',
+                    type: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCsrfToken(),
+                    },
+                    data: JSON.stringify({
+                        subject_name: name.subject_name,
+                    }),
+                    success: function(response) {
+                        // Clear existing visualizations
+                        const tsneContainer = $('#tsne-container');
+                        const hdbscanCosineContainer = $('#hdbscan-cosine-container');
+                        tsneContainer.empty();
+                        hdbscanCosineContainer.empty();
+                        let headings = document.getElementsByClassName("headings");
+                        for (let i = 0; i < headings.length; i++) {
+                            headings[i].style.visibility = "visible";
+                        }
+                        // Add t-SNE graphs (two per row)
+                        let tsneRow;
+                        let count = 0;
+                        for (const module in response.tsne_graphs) {
+                            if (count % 2 === 0) {
+                                tsneRow = $('<div class="row"></div>');
+                                tsneContainer.append(tsneRow);
+                            }
+                            const graphDiv = $(`<div class="graph-container">${response.tsne_graphs[module]}</div>`);
+                            tsneRow.append(graphDiv);
+                            count++;
+                        }
+
+                        // Add HDBSCAN and Cosine Similarity graphs with scores (side-by-side per row)
+                        for (const module in response.hdbscan_cosine_graphs) {
+                            const row = $('<div class="row"></div>');
+
+                            const hdbscanDiv = $(`
+                                <div class="graph-container">
+                                    ${response.hdbscan_cosine_graphs[module].HDBSCAN}
+                                    <p class="score">HDBSCAN Score: ${response.scores[module].HDBSCAN_Score || 'N/A'}</p>
+                                </div>
+                            `);
+                            const cosineDiv = $(`
+                                <div class="graph-container">
+                                    ${response.hdbscan_cosine_graphs[module].Cosine_Similarity}
+                                    <p class="score">Cosine Similarity Score: ${response.scores[module].Cosine_Similarity_Score || 'N/A'}</p>
+                                </div>
+                            `);
+
+                            row.append(hdbscanDiv);
+                            row.append(cosineDiv);
+
+                            hdbscanCosineContainer.append(row);
+                        }
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

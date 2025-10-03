@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to VTU QPRS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen bg-gray-100">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a href="{% url 'landingpage'%}" class="flex items-center justify-center">
+        <img src="{% static 'book-icon.png'%}" alt="Book Icon" class="h-6 w-6 text-primary">
+        <span class="ml-2 text-lg font-semibold">VTU QPRS</span>
+      </a>
+    </header>
+    <main class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="card w-full max-w-md">
+        <div class="card-content pt-6">
+          <div class="flex flex-col space-y-2 text-center mb-6">
+            <h1 class="text-2xl font-bold">Login to VTU QPRS</h1>
+            <p class="text-gray-500">Enter your credentials to access your account</p>
+          </div>
+          <form class="space-y-4" method="POST" action="{% url 'login'%}">
+            {% csrf_token %}
+            <div class="space-y-2">
+              <label for="email" class="block mb-1">Email</label>
+              <input id="email" type="email" placeholder="Enter your email" name="email" value="{{email}}" required class="input"/>
+            </div>
+            <div class="space-y-2">
+              <label for="password" class="block mb-1">Password</label>
+              <input id="password" type="password" placeholder="Enter your password" name="password" required class="input"/>
+              {% if messages %}
+                  <ul class="messages" style="list-style-type: none;">
+                      {% for message in messages %}
+                          <li{% if message.tags %} class="{{ message.tags }}"{% endif %} style="color: red;">{{ message }}</li>
+                      {% endfor %}
+                  </ul>
+              {% endif %}
+            </div>
+            <div class="space-y-2">
+              <label>User Type</label>
+              <div class="radio-group">
+                <input type="radio" id="student" name="userType" value="student" {% if user_type == "student" %}checked{% endif %}>
+                <label for="student">Student</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="admin" name="userType" value="admin" {% if user_type == "admin" %}checked{% endif %}>
+                <label for="admin">Admin</label>
+              </div>
+            </div>
+            <button type="submit" class="button w-full">Login</button>
+          </form>
+          <div class="mt-4 text-center">
+            <a href="{% url 'forgetpassword'%}" class="text-sm text-primary hover:underline">Forgot your password?</a>
+          </div>
+          <div class="mt-6 text-center">
+            <p class="text-sm text-gray-500">
+              Don't have an account? <a href="{% url 'signup'%}" class="text-primary hover:underline">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-gray-500">© 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a href="#" class="text-xs hover:underline underline-offset-4">Terms of Service</a>
+        <a href="#" class="text-xs hover:underline underline-offset-4">Privacy</a>
+      </nav>
+    </footer>
+  </div>
+  <script src=""></script>
+</body>
+</html>
+

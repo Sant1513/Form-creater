@@ -1,0 +1,49 @@
+ Explain with a neat diagram the workflow of a Map reduce model. Also write a mapper and a reducer code to find the number of occurrence of the word * ‘data™ in the file “Filetxt”.
+ Explain the following
+(i) Name mode high availability
+(ii) Speculation execution "
+(iii) Difference between two version of hadoop. 
+ An enterplise has 500 GB of unstructured data to be processed. Suggest a suitable
+architeeture for this work. Explain with a diagram all the-components of the file system
+supperted by your solution. ? 
+ Write HDFS commands for the following operations : By 5
+(i) to find the version of HDES m
+(ii) download and install Hadoop
+(iii) to run postmap service
+(iv) to run zookeeper controller failover dacnion «
+(v) to startand stop namenode and datanodes
+(vi) to run mapperand reducer with input file 
+ What is HDFS? With a neat diagram explain the components of HDFS (Hadoop Distributed
+File Systems) ; 
+ With a neat diagram, discuss the steps MapReduce parallel data flow with example of word
+count. 
+ zi OR
+Explain Block replication in HDFS and its advantages. 
+ Explain the following roles in HDFS deployment with a diagram:
+(i) High Availability (ii) Name Node Federation. 
+ With example, explain the following general HDFS commands:
+(i) HDFS version (ii) Listefiles (ili) Make directory
+(iv) Copy files (v) Delete a file 
+ What do you understand by HDFS? Explain its components with neat diagram. —_ 
+ Explain any eight user HDFS commands. 
+ Explain HDFS NAME NODE, Federation , NFS Gateway , Check point and Backups ,
+HDFS Snapshots. 
+ With a neat diagram, explain Apache Hadoop parallel Map Reduce data flow. 
+ What is HDFS? Explain its components with a neat diagram. 
+ Explain HDFS safemode and rack awareness, with neat diagram. 
+ What is MapReduce Program? Explain MapReduce parallel data flow, with neat functional
+diagram. 
+ What is Nano node federation? Explain NaneNode high availability design with diagram.
+
+ How does the Hadoop MapReduce, Data flow work for a gore count program? Give an
+example. 
+ Briefly explain HDFS Name Federation, NFS Gateway, Snapshots, Checkpoint and
+Backups. 4 
+ OR ty
+What do you understand by HDFS? Explain its components with a neat diagram. 
+ Bring out the concepts of HDFS block as a with an example. 
+ 1 a. Discuss the various system roles in an HDFS components or deployment. 
+ b. Describe HDFS block replication with an example. 
+ OR ee ae
+2 a. Briefly explain HDFS NameNode Federation, NFS.gateway, Snapshots. 
+ b. Write a program to Read and Write HDFS file using java. 

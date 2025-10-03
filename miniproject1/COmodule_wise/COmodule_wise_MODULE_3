@@ -1,0 +1,80 @@
+ 5 a. Draw the organization of a 1Kx1 memory cell and explain it’s working. 
+ b, Explain the internal organization of a 16-Megabit dynamic RAM (DRAM) chip configured as 2Mx8 cells, with a neat! diagram. 
+ c. Assume a disk unit has 24 ‘recording surfaces. It has a total of 14,000 cylinders. There is an average of 400 sectors,per track. Each sector contains 512 bytes of data.
+(i) | What is the maximum number of bytes that can be stored in this unit?
+(ii) What is the data transfer rate in bytes per second at a rotational speed of 7200 rpm?
+(iii) _Usifg a 32-bit word, suggest a suitable scheme for specifying the disk address, “assuming that there are 512 bytes per sector. 
+ a. With a block diagram, explain the direct and set associative: mapping between cache and
+main memory. 
+ b. Draw a neat diagram of memory hierarchy in contempoary computer system. Also indicate relative variation of size, speed and cost per bit in the hierarchy. 
+ c. Explain with a block diagram, how the translation look aside buffer is used in implementing
+virtual memory. 
+ 5 a. Draw a neat block diagram of memory hierarchy in a Computer system. Discuss the variation of size, speed and cost per bit the hierarchy.
+ b. Explain the working of a single transistor dynamic memory cell and internal organization of a 16 megabit DRAM chip configured as 2M.x 8 cells. 
+ 6 a. Explain the different mapping functions used in cache memory. 
+ b. What is replacement policy? Explain. LRU replacement algorithm. 
+ c. Explain memory interleaving with necessary diagram. 
+ With a neat diagram, explain the internal organization of a2Mx8 dynamic memory chip,
+
+ Explain direct mapping technique and set associative mapping technique. 
+ Define ROM. List and explain various types of ROMS. 
+ What is virtual memory technique? Explain virtual memory address translation. 
+ Explain synchronous DRAMS with a block diagram. 
+ Define the following :
+(i) Memory latency (ii) Memory bandwidth
+(iii) Hit-rate (iv) Miss - penalty 
+ 5 a. Draw the internal organization of a 2M x 8 dynamic memory chip and explain working with fast page mode. 
+ b. . State and explain the types of read only memory and memory hierarchy. 
+ : OR
+6 a. What is cache memory? Explain different mapping functions with diagrams. 
+ b. Explain memory interleaving withdiagram. State hit rate and miss penalty. 
+ With a neat diagram, explain design of 2M x 32 memory module using 1M x 8 memory
+chips. 
+ Describe the organization of 2M x 32 memory using 512M x 8 memory chip. 
+ Explain synchronous DRAMS with block diagram. 
+ Write a note on flash memory. 
+ Explain various types of ROMs. 
+ Explain associative mapping and set associative mapping. 
+ With a neat diagram explain the internal organization of 16x8 memory chip. 
+ Describe the working of static RAM memories. 
+ What is memory interleaving? Explain. 
+ What is cache memory? Explain the three mapping functions of cache memory. 
+ Analyse how data is written into ROM. Discuss different types of Read Only Memories.
+
+ 5 a. Draw.a diagram and explain the working of 16 megabit DRAM chip configured as 2m x 8.
+
+ b. Explain direct mapping-technique and associative mapping technique in mapping function.
+
+ 6 a. Analyze how data.are written into (ROM) Read Only Memory. Discuss different types of
+Read Only Memories. 
+ b. What is cache memory? Explain any two mapping functions of cache memory. _
+ Explain the working of static RAM cell. 
+ With neat diagram explain the working of 16 Megabits DRAM chip configured as 2M x 8.
+i 
+ With neat diagram, explain the memory hierarchy-with respect to speed, size and cost.
+
+ Explain different types of ROMs. -
+ With neat diagram, explain the internal structure of ROM celk: 
+ With neat diagram, explain how virtual memory address translation takes place. 
+ With a neat diagram, explain design of 2M x 32 memory module using 1M x 8 memory
+chips. 
+ Describe the organization of 2M x 32 memory using 512M x 8 memory chip. 
+ Explain synchronous DRAMS with block diagram. 
+ 1 of 2
+10
+esp
+17CS834
+Write a note on flash memory. 
+ Explain various types of ROMs. 
+ Explain associative mapping and set associative mapping. 
+ With a neat diagram, explain design of 2M x 32 memory module using 1M x 8 memory
+chips. 
+ Describe the organization of 2M x 32 memory using 512M x 8 memory chip. 
+ Explain synchronous DRAMS with block diagram. 
+ 1 of 2
+10
+esp
+17CS834
+Write a note on flash memory. 
+ Explain various types of ROMs. 
+ Explain associative mapping and set associative mapping. 

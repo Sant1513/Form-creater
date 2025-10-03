@@ -1,0 +1,88 @@
+onal cross lines on the remaining blank pages.
+
+ag
+
+fImportant Note : 1. On completing your answers, compulsorily draw di
+
+50, will be treated as malpractice.
+
+fication, appeal to evaluator an
+
+2. Any revealing of identi
+
+d /or equations written eg, 42+8
+
+Third Semester B.E. Degree Examination, June/July 2023
+Computer Organization
+
+Time: 3 hrs. Max. Marks: 100
+
+N ote: Answer any FIVE full questions, choosing ONE full question from each module.
+
+Module-1
+With a neat diagram, explain basic operational concepts of a computer. (08 Marks)
+What is performance measurement? Explain overall’ SPEC rating for the computer in a
+program suite. (04 Marks)
+Draw single bus‘structure. Discuss about memory mapped I/O? Write a note on processor
+clock and clock rate. (08 Marks)
+OR
+Explain with a neat diagram, Big Endian and Little Endiany. (04 Marks)
+
+Define addressing mode. Explain any 4 addressign modes with an example for each.
+
+ote (08 Marks) —
+Write a program that can evaluate the expression ‘A x B + C x D‘in a single accumulator
+processor. Assume that the-processor has load, store, multiply and add instruction and that
+all values fit in the accumulator and with asneat block diagram, explain basic Input, Output
+
+operation. (08 Marks)
+Module-2
+With a neatsketch explain (DMA) Direct Memory Access. (12 Marks)
+
+Explain the following with respect to USB
+i) USB Addressing
+
+1i) USB Protocols. (08 Marks)
+OR
+What is an interrupt with an example éxplain concept of interrupts. (08 Marks)
+With a neat.diagram, explain general 8-bit parallel interface circuit. (06 Marks)
+Explain with aneat diagram, PCI bus in a computer S/M. (06 Marks)
+Module-3
+With a neat diagram, explain design of 2M x 32 memory module using 1M x 8 memory
+chips. (08 Marks)
+Describe the organization of 2M x 32 memory using 512M x 8 memory chip. (08 Marks)
+Explain synchronous DRAMS with block diagram. (04 Marks)
+
+1 of 2
+
+10
+
+esp
+
+17CS834
+
+OR
+Write a note on flash memory. (04 Marks)
+Explain various types of ROMs. (06 Marks)
+Explain associative mapping and set associative mapping. (10 Marks)
+Module-4
+Explain 4-bit Corry look ahead adder. (06 Marks)
+Solve the following explain by. Booth’s algorithm (1001 1) multiplied by (0 1 011).
+(08 Marks)
+Write the steps of Booth’s algorithm. (06 Marks)
+OR
+With a neat diagramyexplain the logic circuit of restoring division. (10 Marks)
+Explain the algorithm steps of non restoring method and solve the problem by non restoring
+method. 1000 by 11. (10 Marks)
+Module-5
+With a neat diagram explain three bus organization of the datapath. (06 Marks)
+With a neat diagram, explain block diagram of a complete processor. (08 Marks)
+Explain with a neat diagram, Organization of the ‘datapath inside a processor. (96 Marks)
+ey OR
+With a neat diagram, explain a simple micro controller. (08 Marks)
+Explain microwave oven with a neat diagram. (08 Marks)
+Explain with aneat diagram, processor chips of an embedded processor. (04 Marks)
+* KK KK
+
+2 of 2
+

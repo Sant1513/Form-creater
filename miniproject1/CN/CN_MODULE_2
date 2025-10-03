@@ -1,0 +1,9 @@
+1. With the help of FSM, describe the two states of the sender side and one state of the receiver
+side of rdt2.0 (10 Marks)
+
+2. With a neat diagram, demonstrate the working of Go-BACK-N protocol. (10 Marks)
+
+3. Describe TCP connection management with help of diagram. (10 Marks)
+
+4. Interpret the FSM to TCP congestion control. (10 Marks)
+

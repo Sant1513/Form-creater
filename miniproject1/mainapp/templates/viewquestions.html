@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Questions</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles4.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-box">
+                <img src="{% static 'extract-icon.png'%}" class="icon" alt="File Question Icon">
+            </div>
+        </div>
+
+        <div class="text-area-wrapper">
+            <textarea id="extractedText" class="textarea" placeholder="The extracted text will appear here..." value="" readonly="true"></textarea>
+        </div>
+        <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+        <div class="auto-scroll">
+            <label for="autoScroll">Auto-scroll</label>
+            <input type="checkbox" id="autoScroll" onclick="">
+            <button onclick="download_pdf()" style=" border-radius: 5px;padding: 10px;background-color: #000;color: white;margin-left: 10px;">Download</button>
+            
+        </div>
+    </div>
+
+    <script >
+
+        function getCsrfToken() {
+            return document.getElementById('csrf-token').value;
+        }
+        const headers = {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCsrfToken(),
+        };
+        window.onload = function() {
+            const textarea = document.getElementById("extractedText");
+            const questions = localStorage.getItem('imp_questions');
+            if (questions) {
+                textarea.value = JSON.parse(questions);
+            } else {
+                container.innerText = "No questions available.";
+            }
+        };
+        function download_pdf() {
+            const questions = document.getElementById("extractedText").value;
+            const question_details = { "questions": questions };
+
+            fetch("{% url 'downloadit' %}", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(question_details)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => {
+                        alert(err.error);
+                    });
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = "important_questions.pdf";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+    </script>
+</body>
+</html>
+

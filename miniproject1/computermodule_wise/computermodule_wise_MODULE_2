@@ -1,0 +1,12 @@
+ 3 a. Explain the working of; the Direct Memory Access (DMA) controler i in detail. Also, with
+the supporting diagram, explain different registers ina DMA interface. 
+ . Explain centralized and distributed BUS Afbitration, with diagrams. 
+ c. Explain how interrupt requests from several input/output ‘devices can be communicated to a
+processor using Daisy Chain Mechanisit , 
+ 4 a. Using fhe Piming diagram wes nvput Data Transfer and the Handshake scheme, explain the
+input operation on an asynehronous BUS, , 
+ b. Draw the block diagram of- universal serial. BUS structure connected to the host computer.
+Briefly explain all fields’ of packets that are ‘ised for communication between a host and a
+device connected to a USB port. > 
+ c. Explain witha block diagram the , <i to processor connection in parallel port.
+‘ 

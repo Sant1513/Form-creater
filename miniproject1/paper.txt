@@ -1,0 +1,81 @@
+MODULE -0
+1. Define the following terms :
+i) Database
+ii) DBMS catalog
+lii) Entity
+iv) Snapshot
+v) Degree ofa relationship. (05 Marks)
+2. Explain types of end-users with suitable examples. (05 Marks)
+3. List and explain advantages of using DBMS approach. (10 Marks
+Define the following terms
+i) Cardinality
+il) Weak entity
+11) Program data independence
+iv) Total participation
+v) Value sets. (05 Marks)
+4. Describe three schema architecture. Why do we need mappings between schema levels?
+(05 Marks)
+MODULE -1
+1. Explain the entity integrity and referential integrity constraints. Why is cach considered
+important. Give examples. (05 Marks)
+2. Discuss equijoin and natural join with suitable examples using relational algebra notation.
+(05 Marks)
+3. Given the schema :
+Passenger (pid, pname, pgender, pcity)
+Agency (aid, anme, acity)
+Flight (fid, fdate, time, src, dest)
+Booking (pid, aid, fid, fdate)
+Give relation algebra expression for the following :
+1) Get the complete details of all flights to new Delhi
+ii) Find only the flight numbers for passenger with paid 123 for flights to Chennai before
+06/1 1/2020
+ili) Find the passenger names for those who do not have any bookings in any flights
+iv) Get the details of flights that are scheduled on both dates 01/12/2020 and 02/12/2020 at
+16:00 hours
+v) Find the details of all male passengers who are associated with jet agency. (10 Marks)
+4. lof2
+10
+ba]
+-
+18CS53
+Explain the ER to relational mapping algorithm with suitable example for each step.
+(10 Marks)
+5. Write SQL query for the following database scheme :
+Employee(employee_name, street, city)
+Works (employee_name, company_name, salary)
+Company(company_name, city)
+Manages(employee_name, manager_name)
+1) Find the names, street address, and cities of residence for all employees who work for
+‘First Bank Corporation’ and earn more than $10,000
+ii) Find the names of all employees in the database who do not work for ‘First Bank
+Corporation’. Assume that all people work for exactly one company
+iii) Find the names of all employees in the database who earn more that every employee of
+‘Small Bank Corporation’. Assume that all people work for at most one company
+iv) Find the name of the company that has the smallest payroll
+v) Find the names of all employees in the database who live in the same cities and on the
+same streets as do their managers. (10 Marks)
+MODULE -2
+1. Explain cursors and its properties in embedded SQL with suitable example. (05 Marks)
+2. How are triggers defined in SQL? Explain with example. (05 Marks)
+3. Illustrate insert, delete, update, alter and drop statements in SQL. (10 Marks)
+4. With an example, explain stored procedures In SQL. (05 Marks)
+5. Briefly explain types of JDBC drives. (05 Marks)
+6. Illustrate aggregate functions in SQL. (10 Marks)
+MODULE -3
+1. Explain types of update ananalies with examples. (05 Marks)
+2. Explain Armstrong inference rules. (05 Marks)
+3. What is the need for normalization? Explain | NF, 2NF and 3NF with examples. (10 Marks
+What is functional dependency? Write an algorithm to find minimal cover for set of
+functional dependencies. Construct minimal cover m for set of functional dependencies
+which are : E:{B—>A,D-—-A,AB—-D} (10 Marks)
+4. Consider the schema R = ABCD, subjected to FDs F = {A > B, B —> C}, and the non-
+binary partition DI = {ACD, AB, BC}. State whether D1 is a lossless decomposition? [give
+all steps in detail]. (10 Marks)
+MODULE -4
+1. Define transaction. Discuss ACID properties. (05 Marks)
+2. With a neat diagram explain transition diagram of a transaction. (05 Marks)
+3. Why concurrency control and recovery are needed in DBMS? Explain types of problems
+that may occur when two simple transactions run concurrently. (10 Marks)
+4. When deadlock and starvation problem occur? Explain how these problems can be resolved.
+(10 Marks)
+5. Briefly discuss the two-phase locking techniques for concurrency control. (10 Marks)

@@ -1,0 +1,47 @@
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+env/
+venv/
+.venv/
+myenv/
+
+# Django
+db.sqlite3
+local_settings.py
+media/
+staticfiles/
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Cache / temp
+.cache/
+tmp/
+temporary/
+
+# Vector databases / large generated data
+vectorDB/
+
+# Credentials
+.env
+.env.*
+
+

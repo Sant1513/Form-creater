@@ -1,0 +1,35 @@
+ What are the basic operations that can change the states of relations in the database? Explain
+how the basic operations deal with constraints violations. (0
+ Explain the terms Super key , Candidate key and Primary key. (0
+ Given the following schema :
+emp (fname, Lname , SSN , Bdate, address, gender , salary , superSSN , Dno)
+dept (Dname,, Dnumber , MgrSSN , mgrstartdate)
+dept_loc (Dnumber , Dloc)
+project ( Pname, Pnumber, Ploc, Dnum)
+works_on (ESSN, Pno , hours)
+Dependent (ESSN , dependent. name, gender , bdate , relationship)
+Give the relation algebra expression for the following :
+i). Retrieve the name of the manager of each department.
+ii) For each project retrieve the project number , project name and number of employee
+who worked on that project.
+iii) Retrieve the names of employees who work on all the project controlled by
+department 5.
+iv) Retrieve the name of employees who have no dependents.
+v) Retrieve number of Male and Female employee working in the Company. (1
+ Describe the steps of an algorithm for ER to Rational mapping with example. (0
+ Write command that is used for table creation. Explain how constraints are specified in SQL
+during table creation, with suitable example. (0
+ Given the following schema
+Emp (Fname, Lname , SSN , bdate , address, gender, salary , superSSN , dno)
+dept (dname , dnumber, mgrSSN , megrstartdate)
+dept_loc (dnumber, dloc)
+project (Pname, Pnumber, Ploc , dnum)
+works on (ESSN, Pno, hours)
+dependent (ESSN , dependent_name, gender, bdate, relationship)
+Give the relation algebra expression for the following :
+i) Retrieve the name and address of all employees who work for �sports� department.
+ii) Retrieve each department number, number of employers and their average salary.
+iii) List the project number, controlling department number and department manager�s last
+name , address and birthdate.
+iv) Retrieve the name of employees with 2 or more dependents.
+v) List female employees from dno = 20 earning more than 50000. (1

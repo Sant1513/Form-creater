@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VTU QPRS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles1.css'%}">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <span class="book-icon">&#128214;</span>
+        <span class="title">VTU QPRS</span>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#working">About Us</a>
+        <a href="#contact_us">Contact Us</a>
+        <button class="login-btn"><a href="{% url 'login'%}">Login</a></button>
+        <button class="signup-btn"><a href="{% url 'signup'%}">Sign Up</a></button>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>VTU Question Paper Recommender System</h1>
+        <p>Get AI-powered analysis and receive a set of important questions for your VTU exams.</p>
+        <button class="get-started-btn"><a href="{% url 'signup'%}">Get Started</a></button>
+      </div>
+    </section>
+
+    <section id="working" class="how-it-works">
+      <h2>How It Works</h2>
+      <p>Our AI-powered system analyzes question papers to provide you with a set of important questions.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"><img src="{% static 'AI_icon.png'%}" alt="AI Analysis"></div>
+          <h3>AI Analysis</h3>
+          <p>Our advanced AI algorithms analyze question papers to identify important questions and patterns.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="{% static 'Getimportant_icon.png'%}" alt="Get Important Questions"></div>
+          <h3>Get Important Questions</h3>
+          <p>Receive a curated set of important questions to focus on for your upcoming VTU exams.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="{% static 'Improve_icon.png'%}" alt="Improve performance"></div>
+          <h3>Improve Performance</h3>
+          <p>Focus your study efforts on the most important topics and questions to improve your exam performance.</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact_us" class="signup-section">
+      <h2>Ready to ace your VTU exams?</h2>
+      <p>Sign up now and start getting AI-powered question paper analysis.</p>
+      <form class="contact_form">
+        <input type="email" id="email_section" placeholder="Enter your email">
+        <input type="text" id="message_section" placeholder="Enter your message" required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+    <nav>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+
+  <script>
+    // Include this script in your HTML file
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".contact_form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form from reloading the page
+
+        const emailInput = form.querySelector("#email_section").value.trim();
+        const messageInput = form.querySelector("#message_section").value.trim();
+
+        if (!messageInput) {
+          alert("Please fill out all the message fields.");
+          return;
+        }
+
+        // Email sending logic
+        const emailData = {
+          service_id: "service_aa7vqhh", // Replace with your EmailJS service ID
+          template_id: "template_a8bnyji", // Replace with your EmailJS template ID
+          user_id: "UWm6uSiKB2-XGXMs6", // Replace with your EmailJS user ID
+          template_params: {
+            email: emailInput,
+            message: messageInput,
+          },
+        };
+
+        // Using EmailJS API
+        fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(emailData),
+        })
+          .then((response) => {
+            if (response.ok) {
+              alert("Email sent successfully!");
+              form.reset(); // Clear the form
+            } else {
+              throw new Error("Failed to send email");
+            }
+          })
+          .catch((error) => {
+            console.error("Error sending email:", error);
+            alert("An error occurred while sending the email. Please try again later.");
+          });
+      });
+    });
+
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+ 3 a. Explain the working of; the Direct Memory Access (DMA) controller  in detail. Also, with the supporting diagram, explain different registers in a DMA interface. 
+ . Explain centralized and distributed BUS Arbitration, with diagrams. 
+ c. Explain how interrupt requests from several input/output ‘devices can be communicated to a processor using Daisy Chain Mechanism , 
+ 4 a. Using the timing diagram of an input Data Transfer and the Handshake scheme, explain the input operation on an asynchronous BUS, , 
+ b. Draw the block diagram of- universal serial. BUS structure connected to the host computer. Briefly explain all fields’ of packets that are used for communication between a host and a device connected to a USB port. > 
+ c. Explain with a block diagram the , <i to processor connection in parallel port.
+ 3 a. What is direct memory access, when it is used? Explain it with block diagram. 
+ . Define the terms ‘cycle stealing” and ‘burst mode with respect to DMA. 
+ c. Define bus arbitration. Explain in detail centralized bus arbitration. 
+ °. OR
+4 a. With a block diagram, explain how the keyboard is connected to processor. 
+ b. Explain the use of a PCI bus in a computer system with a neat sketch. 
+ c. What are the design objectives of USB? ; 
+ What is an interrupt? With supporting diagram, explain the following :
+(i) Interrupt Nesting
+(ii) Simultaneous request 
+ What do you mean by DMA? Explain its operations using registers in a DMA interface.
+ What are exceptions? List and explain the different kinds of exceptions. 
+ What is Bus Arbitration? Explain centralized and distributed arbitration with a neat diagram.
+
+ Explain the following with respect to USB:
+(i) USB Architecture (ii) USB Addressing 
+ 3 a. Explain interrupt and interrupt hardware. State steps. in enabling and disabling interrupts.
+ b, Explain interrupt nesting and handling simultaneous requests in interrupts. 
+ 4 a. Explain DMA transfer with bus arbitration. 
+ b. Explain USB tree structure and protocols. % 
+ With a neat sketch explain (DMA) Direct Memory Access. 
+ Explain the following with respect to USB
+i) USB Addressing
+ii) USB Protocols. 
+ What is an interrupt with an example explain concept of interrupts. 
+ With a neat diagram, explain general 8-bit parallel interface circuit. 
+ Explain with a neat diagram, PCI bus in a computer S/M. 
+ With neat sketches, explain Various methods for handling interrupts raised by multiple
+devices. 
+ ‘What is DMA Bus arbitration? Explain different but arbitration techniques. 
+ OR '
+Explain synchronous bus and asynchronous bus with neat diagrams. 
+ With the help of timing diagram explain the read operation on the PCI bus. 
+ 3 a. With neatdiagram, explain various methods for handling multiple interrupts requests raised by multiple devices. 
+ b. What.is DMA Bus Arbitration? Briefly explain different:bus arbitration techniques.
+ 4 a. What is an interrupt? What are interrupt service routine and what are vector interrupts?Explain with example. é 
+ b. Explain the following with respect to USB:
+i) U.S.B. Architecture
+iil) U.S.B. protocols. 
+ With neat diagram, explain interrupt operation. 
+ What is DMA? Showing the possible register configurations in DMA interface. Explain
+DMA. 
+ With neat timing diagram, explain synchronous input transfer. 
+ Explain how interrupt requests from several IO devices can be communicated to a processor
+through a single INTR line. 
+ With a neat block diagram, explain how a keyboard is connected to a processor. 
+ Compare serial and parallel interface. 
+ With a neatsketch explain (DMA) Direct Memory Access. 
+ Explain the following with respect to USB
+i) USB Addressing
+1i) USB Protocols. 
+ What is an interrupt with an example éxplain concept of interrupts. 
+ With a neat.diagram, explain general 8-bit parallel interface circuit. 
+ Explain with aneat diagram, PCI bus in a computer S/M. 
+ With a neatsketch explain (DMA) Direct Memory Access. 
+ Explain the following with respect to USB
+i) USB Addressing
+1i) USB Protocols. 
+ What is an interrupt with an example éxplain concept of interrupts. 
+ With a neat.diagram, explain general 8-bit parallel interface circuit. 
+ Explain with aneat diagram, PCI bus in a computer S/M. 

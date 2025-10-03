@@ -1,0 +1,170 @@
+1. Explain the entity integrity and referential integrity constraints. Why is cach considered
+important. Give examples. (05 Marks)
+
+2. Discuss equijoin and natural join with suitable examples using relational algebra notation.
+(05 Marks)
+
+3. Given the schema :
+Passenger (pid, pname, pgender, pcity)
+Agency (aid, anme, acity)
+Flight (fid, fdate, time, src, dest)
+Booking (pid, aid, fid, fdate)
+Give relation algebra expression for the following :
+1) Get the complete details of all flights to new Delhi
+ii) Find only the flight numbers for passenger with paid 123 for flights to Chennai before
+06/1 1/2020
+ili) Find the passenger names for those who do not have any bookings in any flights
+iv) Get the details of flights that are scheduled on both dates 01/12/2020 and 02/12/2020 at
+16:00 hours
+v) Find the details of all male passengers who are associated with jet agency. (10 Marks)
+
+4. Explain the ER to relational mapping algorithm with suitable example for each step.
+(10 Marks)
+
+5. Write SQL query for the following database scheme :
+Employee(employee_name, street, city)
+Works (employee_name, company_name, salary)
+Company(company_name, city)
+Manages(employee_name, manager_name)
+1) Find the names, street address, and cities of residence for all employees who work for
+�First Bank Corporation� and earn more than $10,000
+ii) Find the names of all employees in the database who do not work for �First Bank
+Corporation�. Assume that all people work for exactly one company
+iii) Find the names of all employees in the database who earn more that every employee of
+�Small Bank Corporation�. Assume that all people work for at most one company
+iv) Find the name of the company that has the smallest payroll
+v) Find the names of all employees in the database who live in the same cities and on the
+same streets as do their managers. (10 Marks)
+
+1. What are the basic operations that can change the states of relations in the database? Explain
+how the basic operations deal with constraints violations. (06 Marks)
+
+2. Explain the terms Super key , Candidate key and Primary key. (04 Marks)
+
+3. Given the following schema :
+emp (fname, Lname , SSN , Bdate, address, gender , salary , superSSN , Dno)
+dept (Dname,, Dnumber , MgrSSN , mgrstartdate)
+dept_loc (Dnumber , Dloc)
+project ( Pname, Pnumber, Ploc, Dnum)
+works_on (ESSN, Pno , hours)
+Dependent (ESSN , dependent. name, gender , bdate , relationship)
+Give the relation algebra expression for the following :
+i). Retrieve the name of the manager of each department.
+ii) For each project retrieve the project number , project name and number of employee
+who worked on that project.
+iii) Retrieve the names of employees who work on all the project controlled by
+department 5.
+iv) Retrieve the name of employees who have no dependents.
+v) Retrieve number of Male and Female employee working in the Company. (10 Marks)
+
+4. Describe the steps of an algorithm for ER to Rational mapping with example. (06 Marks)
+
+5. Write command that is used for table creation. Explain how constraints are specified in SQL
+during table creation, with suitable example. (04 Marks)
+
+6. Given the following schema
+Emp (Fname, Lname , SSN , bdate , address, gender, salary , superSSN , dno)
+dept (dname , dnumber, mgrSSN , megrstartdate)
+dept_loc (dnumber, dloc)
+project (Pname, Pnumber, Ploc , dnum)
+works on (ESSN, Pno, hours)
+dependent (ESSN , dependent_name, gender, bdate, relationship)
+Give the relation algebra expression for the following :
+i) Retrieve the name and address of all employees who work for �sports� department.
+ii) Retrieve each department number, number of employers and their average salary.
+iii) List the project number, controlling department number and department manager�s last
+name , address and birthdate.
+iv) Retrieve the name of employees with 2 or more dependents.
+v) List female employees from dno = 20 earning more than 50000. (10 Marks)
+
+
+1. Discuss the different types of update operations on relational database. Explain how the
+basic operations deals with constraint violations. (08 Marks)
+
+2. Explain the data types available for attribute specification in SQL. (08 Marks)
+
+3. Problems based on relational operations in DBMS. Show the results of the relational operations based on the given data (10 Marks)
+
+4. Explain Unary relational operations with an example. (06 Marks)
+
+1. Define the following terms: 1) Key  ii) Superkey _ iii) Candidate key
+iv) Primary key v) Foreign key. (05 Marks)
+
+2. Enumerate the steps involved in converting the ER constructs to corresponding relational
+tables. (07 Marks)
+
+3. Considering the schema
+Sailors (sid , sname , rating , age)
+Boats (bid , bname _, color)
+Reserves (sid , bid , day)
+Write relational algebraic queries for the following :
+i) Find names of sailors who have reserved boat # 103.
+ii) Find names of sailors who have reserved a red boat.
+iii) Find names of sailors who have reserved a red or green boat.
+iv) Find names of sailors who have reserved all boats. (08 Marks)
+
+4. Explain with examples , the basic constraints that can be specified when a database table is
+created in SQL. (12 Marks)
+
+5. Write SQL queries for the following relational schema :
+CUSTOMER (CID , CNAME , EMAIL , ADDR , PHONE)
+ITEM (ITEM_NO,, ITEM_NAME, PRICE , BRAND)
+SALES (CID , ITEM_NO ,ITEMS , AMOUNT , SALE_DATE)
+SUPPLIER (SID , SNAME , SPHONE , SADDR)
+SUPPLY (SID , ITEM NO , SUPPLY_DATE , QTY)
+
+i) List the items purchased by customer 'Prasanth'.
+ii) Retrieve items supplied by all suppliers starting from 1st Jan 2019 to 30st Jan 2019.
+ili) Get the details of customers whose total purchase of items worth more than 5000 rupees.
+iv) List total sales amount, total items , average sale amount of all items.
+v) Display customers who have not purchased any items. (08 Marks)
+
+1. Explain the four relational model constraints. (06 Marks)
+
+2. Explain all the steps of Relational database design using E-R to relational schema with a
+suitable example. (06 Marks)
+
+3.  Discuss the DIVISION operation of relational algebra.Assume A,B,B2,B3 are different relation.Find the Quotient for the following :
+Find 1) A/B, il) A/B2 iii) A/B3 (08 Marks)
+
+4. Explain the characteristics ofa relational model. (06 Marks)
+
+5. Explain all types of outer join operations in relational algebra. Demonstrate the advantage of
+outer join operation over the inner join operation. (06 Marks)
+
+6. Considering the following schema
+Sailors (sid, sname, rating, age)
+Boats (bid, bname, color)
+Reserves (sid, bid; day) .
+Write a relational algebra queries for the following :
+i) Find the names of sailors who have reserved boat#103.
+ii) Find the names of sailors who have reserved a red boat.
+iii) Find the names of sailors who have reserved a red or green boat.
+iv) Find the names of sailors who have reserved all boats. (08 Marks)
+
+1. Briefly discuss different type of update operations,omrelational database. Show an example
+of a violation of the referential and entity integrity in each of the update operation. (08 Marks)
+
+2. Consider the two relation tables and perform relational algebra like joins,search.:(08 Marks)
+
+3. List and explain the characteristics of Relations. (04 Marks)
+
+4. Define the following :
+i) Primary key ii) Super key
+ili) Foreign key iv) Candidate key. (04 Marks)
+
+5. Discuss all the forms of ALTER Commands with example. (06 Marks)
+
+6. Consider the following tables :
+Works (Pname , Cname , Salary)
+Lives (Pname , Street , City)
+Located in (Cname , City)
+Write the following queries in Relational algebra :
+i) List the names of the people who work for the Company "Wipro" along with the cities
+they live in.
+ii) Find the names of the persons who do not work for "Infosys":
+iii) Find the people whose salaries.are more than that of all of the "Oracle" employees.
+iv) Find the persons who works and lives in the same City.
+v) Find the names of the companies that are located in.every city where the Company
+Infosys is located. (10 Marks)
+

@@ -1,0 +1,13 @@
+ 1 a. Explain the basic operational concepts of a computer, with a neat block diagram. 
+ b. Explain basic input/output operations and write a program, snippet to read a character and
+print it on screen till new line  is. encountered.  
+ c. A program contains 1000, instructions, out of that 25% instructions requires 4 clock cycles,
+40% instructions require 5 5 clock cycles and remaining | requires 3 clock cycles for execution.
+Find the total time required to execute the program  running in a 1 GHz machine. 
+ OR»
+2 a. What are addressing modes? Explain thé: following addressing modes, with an example for
+each, (i) “Indirect mode (ii) Index mode
+(iii), Relative mode (iv), Auto increment mode. 
+ b. Explain shift and rotate operations \ with examples. a? : 
+ c. Explain Big-Endian and Litt le-Endian method of byte-addressing with an example.
+

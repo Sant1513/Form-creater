@@ -1,0 +1,106 @@
+module_1
+
+1. What is HDFS? Explain its components with a neat diagram.
+2. Bring out the concepts of HDFS block with an example.
+1. Explain Apache Hadoop parallel Map Reduce data flow with a diagram.
+2. How does Hadoop MapReduce data flow work, with examples of word count and gore count programs?
+1. HDFS NameNode 
+2. HDFS Federation 
+3. NFS Gateway 
+4. Checkpoint 
+5. Backups 
+6. HDFS Snapshots
+
+ Additional Questions 
+1. Explain the workflow of a MapReduce model with a neat diagram and write a mapper and reducer code to find the word occurrence in a file.
+2. Explain NameNode high availability, Speculation execution, and the difference between two versions of Hadoop.
+3. Explain eight user HDFS commands, HDFS safemode, and rack awareness with a neat diagram.
+4. Explain Nano node federation and NameNode high availability design with a diagram.
+5. Suggest a suitable architecture for processing 500 GB of unstructured data and explain the components of the file system supported by the solution.
+6. Discuss system roles in HDFS components, describe HDFS block replication, and write a program to read and write HDFS files using Java.
+7. Explain Block replication in HDFS, its advantages, and the roles in HDFS deployment, including High Availability and Name Node Federation.
+8. Explain general HDFS commands such as version, list files, make directory, copy files, and delete a file.
+
+module_2
+
+1. Explain any Nine different YARN application frameworks.
+2. What is YARN and its application framework?
+3. Describe the various features of Hadoop YARN administration.
+4. Explain the structure of Yarn Application and YARN Distributed- Shell.
+1. Explain Apache Squoop Import and Export method.
+2. Explain Apache Sqoop Import and Export methods with neat diagram.
+1. Explain the Hadoop tool to acquire data streams.
+2. Explain Apache Ambari service view of a Hadoop Cluster.
+3. With a neat diagram, explain the Apache Oozie workflow for Hadoop architecture and its role in the Hadoop ecosystem, including Oozie DAG workflow and its types of nodes.
+
+ Additional Questions 
+1. How do you run MapReduce and Message Passing Interface on YARN architecture?
+2. What is the significance of Apache Pig in Hadoop context, its main components, and working?
+3. Explain Oozie DAG workflow and its types of nodes with a diagram.
+4. Discuss the three components of Apache Frame (or Hive, assuming a typo).
+
+module_3
+
+1. What is data warehousing and explain its architecture?
+2. Define Data Warehouse and explain design considerations.
+3. Justify the differences between datamart and data warehouse based on scope, target organization, cost, approach, and time.
+4. Describe the architecture of a data warehouse with a block diagram.
+1. What is Business Intelligence?
+2. List and explain Business Intelligence applications.
+3. List areas of applications of Business Intelligence (BI).
+1. What is Data Mining and its techniques, including supervised and unsupervised learning?
+2. How can one evaluate the results of data mining?
+3. Explain the cross-industry standard process for data mining.
+1. What do you understand by Data Visualization?
+2. List and describe the various charts used for data visualization.
+3. How is Data Visualization important in Big Data Analytics and what role do visualization tools play?
+1. Discuss how data contributes to decision making in Business Intelligence.
+2. Explain Business Intelligence and the Business Intelligence Data Mining Cycle.
+
+ Additional Questions 
+1. How can raw data be cleansed and transformed before it can be used for data mining.
+2. Explain CRISP DM cycle with a diagram.
+3. Explain the star schema design of Data Warehousing with an example.
+4. What is Confusion Matrix?
+5. Differentiate between Data Mining and Data Warehousing.
+
+module_4
+
+1. Explain Decision tree and write the algorithm to construct a decision tree.
+2. Explain Apriori Algorithm and Association Rule with examples of Support, Confidence, and Lift.
+3. Create a decision tree for the given data set and solve the problem using the model.
+4. How does the Apriori algorithm work for association rule mining, explain with an example.
+5. Employ decision tree learning for the given dataset to predict the Class Category-Loan approved or not.
+1. List down the advantages and disadvantages of artificial neural networks.
+2. Explain the design principles of Artificial Neural Network.
+3. List and explain the steps for developing an ANN (Artificial Neural Network).
+1. What is Unsupervised Machine Learning concept? Explain K — Means clustering techniques, with suitable example.
+2. What is unsupervised learning? 
+3. Describe 3 applications of cluster analysis.
+1. Explain Regression and list its key steps.
+2. What are the advantages and disadvantages of Regression Models?
+
+ Additional Questions 
+1. Describe three criteria for choosing a splitting variable.
+2. Develop a regression model for house price based on size and find the house price for a size of 152000 sq. ft.
+3. Find the affinity among the given items and suggest which items can be marketed as a single package.
+4. Differentiate between Linear, Non-linear, and Logistic Regression models.
+
+module_5
+
+1. What is text mining and explain its architecture?
+2. What is web mining and its types?
+3. Explain the text mining process and compare it with data mining.
+4. What are the types of text mining applications and web mining techniques?
+1. Discuss the application and practical consideration of Social Network Analysis.
+2. Define social network analysis and explain different types of network topologies.
+1. What is Support Vector Machine? Explain its model.
+2. What is SVM? With a neat diagram, explain support vector machine model.
+1. Compute the rank values of the modes for the network in Fig.Q10(a) and determine the highest rank mode.
+2. Compute the rank values for the nodes in the network shown in Fig.Q10(b) and determine the highest ranked node with eight iterations.
+3. Discuss web structure mining and compute the rank values for the network in Fig.Q10(a) to find the highest ranked node.
+1. What is Naive Bayes Technique and its model?
+2. What are the advantages and disadvantages of Naive-Bayes classifier?
+
+ Additional Questions 
+

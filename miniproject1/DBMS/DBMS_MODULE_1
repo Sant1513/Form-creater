@@ -1,0 +1,100 @@
+1. Define the following terms :
+i) Database
+ii) DBMS catalog
+lii) Entity
+iv) Snapshot
+v) Degree ofa relationship. (05 Marks)
+
+2. Explain types of end-users with suitable examples. (05 Marks)
+
+3. List and explain advantages of using DBMS approach. (10 Marks
+
+4. Define the following terms
+i) Cardinality
+il) Weak entity
+11) Program data independence
+iv) Total participation
+v) Value sets. (05 Marks)
+
+5. Describe three schema architecture. Why do we need mappings between schema levels?
+(05 Marks)
+
+6. Explain different types of attributes in ER model with suitable examples for each. (10 Marks
+
+1. List and discuss advantages of Database Management System over File Processing System.
+(06 Marks)
+
+2. Explain three Schema Architecture and reason for need of mapping among schema level.
+(08 Marks)
+
+3. Explain different types of attributes that occur in an E-R diagram model with example.
+(06 Marks)
+
+4. Explain characteristics of the Database approach. (06 Marks)
+
+5. Discuss the different types of User friendly interfaces. (06 Marks)
+
+6. Draw an. ER diagram for an AIRLINES database schema with atleast five entities. Also
+specify primary key and structural constraints. (08 Marks)
+
+
+1. Discuss the main characteristics of the database approach and how it differs from traditional
+file systems. (08 Marks)
+
+2. Explain the component module of DBMS and their interactions with the help of neat
+diagram. (08 Marks)
+
+3. Draw an ER-diagram for AIRLINE database schema with atleast five entity types and
+specify primary key and structural constraints and weak entity type. (10 Marks)
+
+4. Define the following terms:
+i) Weak entity type
+ii) Degree ofa relationship type
+iii) Role names and recursive relationship. (06 Marks)
+
+1. Compare DBMS and early file systems , bringing out the major advantages of the database
+approach. (06 Marks)
+
+2. With a neat block diagram, explain the architecture of a typical DBMS. (10 Marks)
+
+3. What are the responsibilities of the DBA and the database designers? (04 Marks)
+
+4. Define the following terms
+i) Datamodel ii) Schema iii) Instance iv) Canned Transaction. (08 Marks)
+
+5. Draw an ER diagram to represent the Election Information System based on the following
+description :
+In the Indian national election, a state is divided into a number of constituencies depending
+upon the population of the state. Several candidates contest elections in each constituency.
+Candidates may be from some party or independent. The election information system must
+record the number of votes obtained by each candidate. The system also maintains the voter
+list and a voter normally belongs to a particular constituency.
+Note that the party details must also be taken care in the design. (12 Marks)
+
+1. Define DBMS. Explain all the basic operations that can be performed by DBMS on a
+database. (05 Marks)
+
+2. Explain the different users of a database system. (10 Marks)
+
+3. Describe the 3-Schema Architecture. (05 Marks)
+
+4. Define the following terms:
+i) Datamodel ii) Schema iii) Insurance  iv) Canned transaction (04 Marks)
+
+5. Describe the structural constraints of a database system with suitable example. (10 Marks)
+
+6. Explain all the E-R diagram notations. : (06 Marks)
+
+1. With neat diagram, describe "ThreeSchema Architecture" and "Data Independence". (06 Marks)
+
+2. Discuss the different types of user friendly interfaces and the types of user who typically use
+each. (06 Marks)
+
+3. With a neat diagram, explain the component modules,of DBMS and their interactions.
+(08 Marks)
+
+4. Explain with the block diagram, the different phases of database design. (06 Marks)
+
+5. Draw an ER diagram of Banking Database. Assume your own entities (minimum 4) ,
+attributes.and relationships. Specify 3NF tables. (14 Marks)
+

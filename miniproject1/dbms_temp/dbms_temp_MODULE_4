@@ -1,0 +1,18 @@
+ Which normal form is based on 6 transitive functional dependencies and full functional
+dependency? Explain the same with example. (0
+ A relation R satisfies the following: FDS : A+~C , AC+D , EAD , EOH.
+Find the cover for this set of FDS. (0
+ Consider the universal relation: R= {A, B, C, D, E, F, G, H, I, J} and the set of functional
+dependencies. F= {AB>C,A�>4DE,B>F,F>GH,D->]J}.
+Determine whether each decomposition has the loss less join property with respect to F.
+D; = {Ri, Ro, Rs} ;)~=~-Ri= {A, B,C, D, E} ; Ro={B,F,G,H} : R;={D,], J}.
+(0
+ Write an algorithm to check whether decomposed relations are in 3NF with dependency
+preservation and non � additive join property. Consider universal relation R = (U, C, L, A)
+and the set of functional dependencies. F = {P � LCA, LC > AP , A > C}. Decompose
+the relation R into 3NF with dependency preservation and non � additive join property.
+(0
+ Define Normal Form. Explain INF, 2NF and 3NF with suitable examples for each.
+(0
+ Consider two set of functional dependencies F = {A >C, AC>D,E�AD,E�H} and
+G={A�> CD, E-> AH}. Are they equivalent? (0

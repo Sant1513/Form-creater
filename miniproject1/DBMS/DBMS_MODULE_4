@@ -1,0 +1,99 @@
+1. Explain types of update ananalies with examples. (05 Marks)
+
+2. Explain Armstrong inference rules. (05 Marks)
+
+3. What is the need for normalization? Explain | NF, 2NF and 3NF with examples. (10 Marks
+
+4. What is functional dependency? Write an algorithm to find minimal cover for set of
+functional dependencies. Construct minimal cover m for set of functional dependencies
+which are : E:{B�>A,D-�-A,AB�-D} (10 Marks)
+
+5. Consider the schema R = ABCD, subjected to FDs F = {A > B, B �> C}, and the non-
+binary partition DI = {ACD, AB, BC}. State whether D1 is a lossless decomposition? [give
+all steps in detail]. (10 Marks)
+
+1. Which normal form is based on 6 transitive functional dependencies and full functional
+dependency? Explain the same with example. (08 Marks)
+
+2. A relation R satisfies the following: FDS : A+~C , AC+D , EAD , EOH.
+Find the cover for this set of FDS. (06 Marks)
+
+3. Consider the universal relation: R= {A, B, C, D, E, F, G, H, I, J} and the set of functional
+dependencies. F= {AB>C,A�>4DE,B>F,F>GH,D->]J}.
+Determine whether each decomposition has the loss less join property with respect to F.
+D; = {Ri, Ro, Rs} ;)~=~-Ri= {A, B,C, D, E} ; Ro={B,F,G,H} : R;={D,], J}.
+(06 Marks)
+
+4. Write an algorithm to check whether decomposed relations are in 3NF with dependency
+preservation and non � additive join property. Consider universal relation R = (U, C, L, A)
+and the set of functional dependencies. F = {P � LCA, LC > AP , A > C}. Decompose
+the relation R into 3NF with dependency preservation and non � additive join property.
+(06 Marks)
+
+5. Define Normal Form. Explain INF, 2NF and 3NF with suitable examples for each.
+(08 Marks)
+
+6. Consider two set of functional dependencies F = {A >C, AC>D,E�AD,E�H} and
+G={A�> CD, E-> AH}. Are they equivalent? (06 Marks)
+
+
+1. Define normal form. Explain 1NF, 2NF and 3NF with suitable example. (08 Marks)
+
+2. Discuss insertion, deletion and modification anomalies. Why are they considered bad?
+Illustrate with example. (08 Marks)
+
+3. Explain the four informal guidelines that may be used as measures to determine the quality
+of relation schema design. (08 Marks)
+
+4. Write an algorithm for finding a minimal cover 'F' for a set of functional dependencies 'E'.
+Find the minimal cover for the given set of FD's
+G: {A -> BCDE, CD => E} (08 Marks)
+
+1. What are the problems caused by insertion , updation and deletion anomalies? Discuss with
+an example. (06 Marks)
+
+2. For the a relation R (A, B, C, D, E) and its instance , check whether the FDs
+given hold or not. Give reasons.
+i) A->B i) B->C lil) D->E iv) CD->E. (04 Marks)
+
+3. Using the minimal cover algorithm , find the minimal cover for the following FDs :
+F={AB->C,A->D, BD->C,D->BG,AE -> F }. (10 Marks)
+
+4. Normalize the a relation upto 3NF :(10 Marks)
+
+5. Define Multi valued Dependency and Join Dependency. Explain 4NF and SNF with
+examples. (10 Marks)
+
+1. Explain the types of update anomalies with examples. (05 Marks)
+
+2. Explain Armstrong's rules of inference. (05 Marks)
+
+3. What is the need for nonmalization? Explain 1 NF, 2NF and 3NF with examples. (10 Marks)
+
+4. Explain the informal-design guidelines of a database. (06 Marks)
+
+5. What is equivalence of sets of functional dependencies? Check whether the following sets of
+F.D's are equivalent or not.
+FD, = {A> B,B->C, ABD}
+FD.= {A>B,B>=G,A>C,A>D} (08 Marks)
+
+6. Write an algorithm to find the closure of functional dependency 'F'. (06 Marks)
+
+1. Briefly explain the informal design guidelines used as measure to determine the quality of
+relations schema design: (08 Marks)
+
+2. What do you mean by Closure of Attributes? Write an algorithm to find closure of attributes.
+06 Marks
+
+3. Given below are two set of FDs for a relation R(A, B, C, D, E). Are they craalbat?
+1) A->B, AB->C,D->AC,D->E :
+ii) A>BC,D-> AE. (06 Marks)
+
+4. What do you mean by Multivalued Dependency? Explain the 4NF with example. (06 Marks)
+
+5. Define First , Second and Third Normal forms by:taking an example. (06 Marks)
+
+6. Consider the following Relation R(A, B, C, DxE, F, G, H, I, J) with
+FDs{A, B}->C , A-> {D,E} , D-> J, B->{F, G} , F -> {H, J}.
+How would you Normalize completely? (08 Marks)
+

@@ -1,0 +1,72 @@
+ a. Analyze the single bus architecture with a neat diagram and write the sequence of control
+steps to execute the instruction ADD R1, R2, R3   
+ b. Analyze the multiple bus architecture with a neat/diagram and write the sequence of control steps to execute the instruction ADD r1,r2,r3 
+ c. List the remote functionality of home telemetry system. 
+ a. Discuss the following in detail:
+(i)NUMA processor
+(ii)UMA processor,  
+ b. With a neat diagram, explain the working of a digital camera. 
+ c: Compare Hardwired control unit with micro-programmed a control unit. 
+ Draw and explain multiple bus organization» Explain its advantages. 
+ Write and explain the control sequence for, execution of an unconditional branch instruction. 
+ Draw the block diagram of the: control unit organization and describe: 
+ Explain basic idea of instruction pipelining. ' 
+ Explain single-bus organization of the data-path inside a processor with neat diagram.
+
+ Write the control sequence for execution of the instruction Add (R3), R; in the execution of a complete instruction, 
+ Write short notes on :
+(i) Hardwired control
+(ii) Micro programmed control. 
+ With block diagram, explain the working of a microwave oven, 
+ With neat diagram, explain single-bus organization of computer and fundamental concepts.
+
+ State the steps required in execution of Add (R3), R1 and explain the execution of branch instruction. 
+ OR’
+Explain the information required to generate control signals and structure of micro programmed control unit. 
+ Explain basic idea of pipe line and stage pipeline structs, 
+ With a neat diagram explain three bus organization of the datapath. 
+ With a neat diagram, explain block diagram of a complete processor. 
+ Explain with a neat diagram, Organization of the ‘datapath inside a processor. 
+ With a neat diagram, explain a simple micro controller. 
+ Explain microwave oven with a neat diagram. 
+ Explain with a neat diagram, processor chips of an embedded processor. 
+ Write and explain the control sequence for execution of the instruction Add(R3), R1 .
+
+ Explain the three-bus organization of the data path. 
+ Briefly explain Hardwired’control and micro programmed control. 
+ What is pipeline? Explaim.4 stages of pipeline with, its instruction execution steps and
+hardware organization. — 
+ Discuss with neat diagram, the single bus organization of the data path inside a processor. (1
+ Write the sequence of control steps required for single bus structure for each if the following
+instructions.
+i) Add the contents of memory location NUM to register R1.
+ii) Add the contents of memory locatiom whose address is at memory location NUM to
+register-R1. 
+ Explain the following:
+i) Hard-wired control
+ii) | Microprogrammed control. 
+ What is pipeline? Explain the 4 stages pipeline) with its instruction execution steps and
+hardware organization. 
+ Explain Flynn’s classification of computers. 
+ With neat diagram, explain attached array processor. 
+ Explain how the following expression is evaluated in pipelined mode:
+Ai *Bi+Ci for i=1,2,....7 
+ With neat diagram, explain SIMD array processor organization. 
+ With neat flow diagram, explain four-segment CPU pipeline. 
+ Writethe Sequence of operations:for the following Doloop.
+Do 20 I=1,100
+20 C[I] = B[I] + A[I] 
+ With a neat diagram explain three bus organization of the datapath. 
+ With a neat diagram, explain block diagram of a complete processor. 
+ Explain with a neat diagram, Organization of the ‘datapath inside a processor. 
+ ey OR
+With a neat diagram, explain a simple micro controller. 
+ Explain microwave oven with a neat diagram. 
+ Explain with aneat diagram, processor chips of an embedded processor. 
+ With a neat diagram explain three bus organization of the datapath. 
+ With a neat diagram, explain block diagram of a complete processor. 
+ Explain with a neat diagram, Organization of the ‘datapath inside a processor. 
+ ey OR
+With a neat diagram, explain a simple micro controller. 
+ Explain microwave oven with a neat diagram. 
+ Explain with aneat diagram, processor chips of an embedded processor. 

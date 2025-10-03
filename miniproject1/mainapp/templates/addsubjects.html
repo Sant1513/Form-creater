@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to VTU QPRS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen bg-gray-100">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a href="{% url 'landingpage'%}" class="flex items-center justify-center">
+        <img src="{% static 'book-icon.png'%}" alt="Book Icon" class="h-6 w-6 text-primary">
+        <span class="ml-2 text-lg font-semibold">VTU QPRS</span>
+      </a>
+    </header>
+    <main class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="card w-full max-w-md">
+        <div class="card-content pt-6">
+          <div class="flex flex-col space-y-2 text-center mb-6">
+            <h1 class="text-2xl font-bold">Subject Details</h1>
+            <p class="text-gray-500">Enter Subject Details</p>
+          </div>
+          <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+            <div class="space-y-2">
+              <label for="subjectcode" class="block mb-1">Subject Code</label>
+              <input id="code" type="text" placeholder="Enter Subject Code" name="code" required class="input"/>
+            </div>
+            <div class="space-y-2">
+              <label for="name" class="block mb-1">Subject Name</label>
+              <input id="name" type="text" placeholder="Enter Subject Name" name="name" required class="input"/>
+            </div>
+            <button type="button" onclick="savedetails()" class="button w-full">Save</button>
+          <div class="mt-6 text-center">
+            <p class="text-sm text-gray-500">
+              GO back to DashBoard? <a href="{% url 'admindashboard'%}" class="text-primary hover:underline">DashBoard</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-gray-500">© 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a href="#" class="text-xs hover:underline underline-offset-4">Terms of Service</a>
+        <a href="#" class="text-xs hover:underline underline-offset-4">Privacy</a>
+      </nav>
+    </footer>
+  </div>
+  <script>
+        function getCsrfToken() {
+            return document.getElementById('csrf-token').value;
+        }
+        const headers = {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCsrfToken(),
+        };
+
+        function savedetails() {
+            // Define the subject name
+            // use this for drop down const subject_name = { subject: document.getElementById("subject-select").value };
+            const name_section=document.getElementById("name")
+            const code_section=document.getElementById("code")
+            const subject_details = { "name": name_section.value,"code":code_section.value };
+            console.log("gnerate entered")
+            fetch("{% url 'addsubdetails' %}", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(subject_details) // Convert subject_name to JSON
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error);
+                    } else if (data.messages === "saved") {
+                        alert("Subject Details saved");
+                        name_section.value=""
+                        code_section.value=""
+                    } else if(data.messages==="existed"){
+                        alert("Subject details already existed")
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+  </script>
+</body>
+</html>
+

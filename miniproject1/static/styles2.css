@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+.hidden{
+  display: none;
+}
+.check-button{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  margin-left: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.logo-text {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.card-content {
+  text-align: left; /* Changed to left-align the content */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #888888;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left; /* Align labels to the left */
+}
+
+input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-group input {
+  margin-right: 4px;
+}
+
+.btn {
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.login-prompt {
+  color: #888888;
+  text-align: center;
+}
+.mt-6 {
+  margin-top: 20px; /* Add more or less space as needed */
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #888888;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+  

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTU QPRS Admin</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles3.css'%}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <span class="title">VTU QPRS Admin</span>
+                <button class="user-button">
+                    <img src="{% static 'user-icon.png'%}" alt="User" class="user-icon">
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="filters">
+                <select class="select-input" id="scheme-select" style="visibility: hidden;">
+                    <option value="" disabled selected>Select the Scheme</option>
+                    <option value="scheme1">Scheme 1</option>
+                    <option value="scheme2">Scheme 2</option>
+                    <option value="scheme3">Scheme 3</option>
+                </select>
+
+                <!-- <select class="select-input" id="semester-select">
+                    <option value="" disabled selected>Select the Semester</option>
+                    <option value="sem1">Semester 1</option>
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem3">Semester 3</option>
+                    <option value="sem4">Semester 4</option>
+                </select> -->
+                <div class="dropdown-container">
+                    <input type="text" id="search-input" placeholder="Enter Subject Code..." autocomplete="off">
+                    <ul id="dropdown-menu" class="hidden"></ul>
+                </div>
+
+                <select class="select-input" id="subject-select" style="visibility: hidden;">
+                    <option value="" disabled selected>Select the Subject</option>
+                    <option value="subject1">Subject 1</option>
+                    <option value="subject2">Subject 2</option>
+                    <option value="subject3">Subject 3</option>
+                </select>
+            </div>
+            <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+            <!-- Card Layout with 2 rows -->
+            <div class="card-container">
+                <!-- First Row -->
+                <div class="card">
+                    <div class="card-content">
+                        <img src="{% static 'upload-icon.png'%}" alt="Upload" class="card-icon">
+                        <h3>Upload the question paper pdf file</h3>
+                        <!-- <input type="file" id="file-input" style="display:none;" /> -->
+                        <button class="card-button" onclick="opengenerate()">Upload PDF</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="{% static 'file-question-icon.png'%}" alt="Get new important questions" class="card-icon">
+                        <h3>Get new important questions</h3>
+                        <button class="card-button" onclick="generate()">Generate</button>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="card">
+                    <div class="card-content">
+                        <img src="{% static 'eye-icon.png'%}" alt="View of Extracted questions" class="card-icon">
+                        <h3>View of Extracted questions</h3>
+                        <button class="card-button" onclick="viewques()">View</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="{% static 'eye-icon.png'%}" alt="View of important questions" class="card-icon">
+                        <h3>Add Subject Details</h3>
+                        <button class="card-button" onclick="openadd_sub()">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="{% static 'eye-icon.png'%}" alt="View of important questions" class="card-icon">
+                        <h3>Visualize The Data</h3>
+                        <button class="card-button" onclick="visualize()">View</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+        </footer>
+        <style>
+            .dropdown-container {
+                position: relative;
+                width: 300px;
+            }
+
+            #search-input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #dropdown-menu {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: white;
+                position: absolute;
+                width: 100%;
+                max-height: 200px;
+                overflow-y: auto;
+                z-index: 1000;
+            }
+
+            #dropdown-menu li {
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            #dropdown-menu li:hover {
+                background-color: #f0f0f0;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+
+        </style>
+        <script>
+            function getCsrfToken() {
+                return document.getElementById('csrf-token').value;
+            }
+            const headers = {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCsrfToken(),
+            };
+            async function visualize() {
+                const result = await checkcode(); // Wait for `checkcode` to finish
+                if (result === "wrong") {
+                    return; // Stop further execution
+                }
+                const name = sessionStorage.getItem('subject_name');
+                console.log(name);
+                //const subject_name = { subject: name };
+                //console.log("gnerate entered")
+                localStorage.setItem("subject_name", name);
+                window.location.href = '/visualize/';
+            }
+            async function opengenerate() {
+                const result = await checkcode(); // Wait for `checkcode` to finish
+                if (result === "wrong") {
+                    return; // Stop further execution
+                }
+                const name = sessionStorage.getItem('subject_name');
+                console.log(name);
+                const subject_name = { subject: name };
+                console.log("gnerate entered")
+                fetch("{% url 'extraction' %}", {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(subject_name) // Convert subject_name to JSON
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.error) {
+                            alert(data.error);
+                        } else if (data.messages === "open") {
+                            console.log("opend the upload");
+                            window.location.href = '/viewextraction/';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                
+            }
+            function alertit(){
+                alert("incorrect code")
+            }
+            async function checkcode() {
+                const code_section = document.getElementById("search-input");
+                if (code_section.value.trim() === '') {
+                    alertit(); // Notify the user of an empty input
+                    return "wrong";
+                } else {
+                    const subject_code = { "code": code_section.value.trim() };
+                    try {
+                        const response = await fetch("{% url 'check_code_name' %}", {
+                            method: "POST",
+                            headers: headers,
+                            body: JSON.stringify(subject_code)
+                        });
+                        const data = await response.json();
+
+                        if (data.error) {
+                            alert(data.error);
+                            sessionStorage.setItem('subject_name', '');
+                            return "wrong";
+                        } else if (data.messages === "present") {
+                            sessionStorage.setItem('subject_name', data.name);
+
+                            // Retrieving data
+                            const name = sessionStorage.getItem('subject_name');
+                            console.log("in check code"+name);
+                            return "correct";
+                        } else if (data.messages === "not_present") {
+                            alertit();
+                            sessionStorage.setItem('subject_name', '');
+                            return "wrong";
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        sessionStorage.setItem('subject_name', '');
+                        return "wrong";
+                    }
+                }
+            }
+            async function generate() {
+                // Define the subject name
+                // use this for drop down const subject_name = { subject: document.getElementById("subject-select").value };
+                const result = await checkcode(); 
+                if(result==="wrong"){
+                    return;
+                }
+                const name = sessionStorage.getItem('subject_name');
+                console.log(name);
+                const subject_name = { subject: name };
+                console.log("gnerate entered")
+                fetch("{% url 'generate' %}", {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(subject_name) // Convert subject_name to JSON
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.error) {
+                            alert(data.error);
+                        } else if (data.messages === "Done") {
+                            alert("Generation of new questions is completed");
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+
+            async function viewques() {
+                // Define the subject name
+                const result = await checkcode(); 
+                if(result==="wrong"){
+                    return
+                }
+                const name = sessionStorage.getItem('subject_name');
+                console.log(name);
+                const subject_name = { subject: name };
+                // const subject_name = { subject: "dbms1" };
+                fetch("{% url 'view' %}", {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(subject_name) // Convert subject_name to JSON
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error); // Show an error message
+                    } else {
+                        // Store the content in localStorage
+                        localStorage.setItem('imp_questions', JSON.stringify(data.imp_question));
+                        
+                        // Redirect to the new HTML page
+                        window.location.href = "/viewquestions/";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+            function openadd_sub(){
+                window.location.href = "/viewadddetails/";
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+            const input = document.getElementById('search-input');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+
+            input.addEventListener('input', () => {
+                const query = input.value.trim();
+                if (query === '') {
+                    dropdownMenu.classList.add('hidden');
+                    dropdownMenu.innerHTML = '';
+                    return;
+                }
+
+                fetch('/get-choices/?q='+encodeURIComponent(query))
+                    .then(response =>{
+                        console.log("Response status:", response.status);
+                        return response.json();
+                    })
+                    .then(choices => {
+                        console.log("Choices received:", choices);
+                        dropdownMenu.innerHTML = '';
+                        if (choices.length > 0) {
+                            choices.forEach(choice => {
+                                const li = document.createElement('li');
+                                li.textContent = choice;
+                                li.addEventListener('click', () => {
+                                    input.value = choice;
+                                    dropdownMenu.classList.add('hidden');
+                                });
+                                dropdownMenu.appendChild(li);
+                            });
+                            dropdownMenu.classList.remove('hidden');
+                        } else {
+                            dropdownMenu.classList.add('hidden');
+                        }
+                    })
+                    .catch(error => console.error('Error fetching choices:', error));
+            });
+        });
+
+        </script>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,187 @@
+module_1
+
+1. Define addressing mode and explain any four addressing modes with examples.
+2. Explain the following addressing modes with examples: 
+   (i) Indirect mode 
+   (ii) Index mode 
+   (iii) Relative mode 
+   (iv) Auto increment mode.
+3. Explain one address, two address, and three address instructions with examples.
+1. What is performance and explain the basic performance equation?
+2. Explain processor clock and clock rate.
+3. What is performance measurement and explain overall SPEC rating for the computer in a program suite.
+1. With a neat diagram, explain the basic operational concepts of a computer.
+2. With a neat diagram, analyze the basic operational concept of a computer and give the operational steps.
+1. Draw and explain the connections between the processor and the main memory.
+2. Draw single bus structure and discuss about memory mapped I/O.
+3. Write a note on processor clock and clock rate.
+1. Explain Big-Endian and Little-Endian methods with examples.
+2. Explain Big Endian and Little Endian methods of byte addressing.
+1. Write a program that can evaluate the expression ‘A x B + C x D‘ in a single accumulator processor.
+2. Write a program to evaluate the arithmetic statement Y = (A+B) * (C+D) using three address, two address and one address instruction.
+1. Explain shift and rotate operations with examples.
+2. Explain various shift and rotate instructions with examples and diagrams.
+Explain with a neat diagram, Big Endian and Little Endian.
+
+ Additional Questions 
+1. Explain basic input/output operations and write a program to read a character and print it on screen till newline is encountered.
+2. Explain the Basic Instruction types with example and find the total time required to execute a program with given instruction distribution and clock cycles.
+3. State and explain the possibilities of encoding of machine instruction of 32 bit word and how input and output operations are performed by the processor.
+4. Determine if a new computer meets the SPEC rating requirement for purchase based on given test results.
+5. Explain addressing modes and calculate the effective address of the source operand in given instructions.
+6. Explain the different processor registers with a diagram.
+
+module_2
+
+1. What are the design objectives of USB?
+2. Explain USB Architecture.
+3. Explain USB Addressing.
+4. Explain USB Protocols.
+5. Explain the USB tree structure.
+6. Draw the block diagram of the universal serial BUS structure connected to the host computer and explain the fields of packets used for communication.
+1. What is an interrupt, explain with an example.
+2. Explain interrupt and interrupt hardware, and state steps in enabling and disabling interrupts.
+3. Explain interrupt nesting and handling simultaneous requests in interrupts.
+4. Explain how interrupt requests from several input/output devices can be communicated to a processor using Daisy Chain Mechanism.
+5. Explain interrupt operation with a diagram.
+1. What is Bus Arbitration? Explain centralized and distributed arbitration.
+2. Explain DMA transfer with bus arbitration and different bus arbitration techniques.
+3. Define bus arbitration and explain centralized bus arbitration.
+1. Explain the use of a PCI bus in a computer system with a neat sketch.
+2. With the help of timing diagram explain the read operation on the PCI bus.
+1. With a neat sketch explain (DMA) Direct Memory Access.
+2. What is direct memory access, when it is used? Explain it with block diagram.
+With a neat diagram, explain general 8-bit parallel interface circuit.
+1. What are the methods for handling interrupts raised by multiple devices?
+2. How can interrupt requests from several IO devices be communicated to a processor through a single INTR line?
+1. Explain the working of the Direct Memory Access (DMA) controller in detail.
+2. What do you mean by DMA and explain its operations using registers in a DMA interface.
+
+ Additional Questions 
+1. What are exceptions and list the different kinds of exceptions.
+2. Explain synchronous and asynchronous bus.
+3. Explain methods for handling multiple interrupts with a diagram.
+4. What is DMA, explain with register configurations and timing diagram.
+5. Compare serial and parallel interface, and explain parallel port connection to processor.
+6. Define 'cycle stealing' and 'burst mode' with respect to DMA.
+7. Explain how a keyboard is connected to a processor with a block diagram.
+
+module_3
+
+1. Explain the internal organization of a 16-Megabit dynamic RAM (DRAM) chip configured as 2Mx8 cells, with a diagram.
+2. Explain the working of a 16 Megabit DRAM chip configured as 2M x 8, with a diagram.
+3. Explain the working of a single transistor dynamic memory cell.
+1. Explain direct mapping technique and set associative mapping technique.
+2. Explain associative mapping and set associative mapping.
+1. Define ROM
+2. Explain various types of ROMs
+1. What is cache memory? 
+2. Explain the different mapping functions of cache memory. 
+3. Explain direct and set associative mapping between cache and main memory.
+Explain synchronous DRAMS with a block diagram.
+1. Explain memory interleaving with a diagram.
+2. What is virtual memory technique and explain virtual memory address translation with a diagram.
+3. Explain how the translation lookaside buffer is used in implementing virtual memory with a block diagram.
+Write a note on flash memory.
+1. Explain the memory hierarchy with respect to speed, size, and cost, using a neat diagram.
+2. Draw a neat diagram of the memory hierarchy in a contemporary computer system, indicating the relative variation of size, speed, and cost per bit.
+Describe the organization of 2M x 32 memory using 512M x 8 memory chip.
+With a neat diagram, explain design of 2M x 32 memory module using 1M x 8 memory chips.
+1. State and explain the types of read only memory.
+2. Discuss the memory hierarchy.
+3. Analyze how data is written into Read Only Memory.
+
+ Additional Questions 
+1. Draw and explain the organization of a 1Kx1 memory cell and a 2M x 8 dynamic memory chip.
+2. Define: 
+   (i) Memory latency 
+   (ii) Memory bandwidth 
+   (iii) Hit-rate 
+   (iv) Miss-penalty
+3. Calculate disk storage parameters: 
+   (i) Maximum number of bytes that can be stored 
+   (ii) Data transfer rate in bytes per second
+4. Explain memory interleaving and its diagram.
+5. Describe the working of static RAM memories and ROM.
+6. Explain the internal structure of ROM cell.
+7. What is replacement policy and explain LRU replacement algorithm.
+
+module_4
+
+1. Write the rules for addition and subtraction of ‘n” bit signed integers using 2°s complement representation system.
+2. Convert the following pairs of decimal numbers to 5-figure signed 2’s complement binary number and add them. State whether overflow has occurred:
+   i) -5 and 7 
+   ii) +10 and -13 
+   iii) -14 and 11
+3. Multiply each of the following pairs of signed 2’s complement number using the booth algorithm:
+   i) A=010111 and B= 110110
+   ii) A=110011 and B= 101100
+   iii) A=110101 and B=011011
+   iv) A=000111 and B=001111
+4. Perform the following operations on the 5-bit signed numbers using 2’s complement representation system:
+   i) (-10)+(-13)
+   ii) (-10)—(+4)
+   iii) (-3) + (-8)
+   iv) (-10)-(+7)
+a. Explain the design of a 4-bit carry look ahead adder with a neat block diagram.
+b. Design and explain the 4-bit carry look-ahead adder with a diagram.
+1. Write an algorithm that performs restoring division.
+2. Perform division using the restoring algorithm for Dividend = 1000 and Divisor = 11.
+3. Draw the circuit arrangement for binary division and perform (1000) + (11) using restoring division.
+4. Perform division of number 9 by 3 using the restoring division algorithm.
+1. Explain Booth’s algorithm.
+2. Multiply using Booth’s Multiplication for the given Multiplicand: 0101101 and Multiplier: 0011110.
+3. Solve (1 0 0 1 1) multiplied by (0 1 0 1 1) using Booth’s algorithm.
+4. Solve (1001 1) multiplied by (0 1 011) using Booth’s algorithm.
+1. Explain Booth's algorithm.
+2. Perform (+13) x (-6) using Booth's algorithm.
+3. Perform (+14) x (-6) using Booth's algorithm.
+Explain the algorithm steps of non restoring method and solve the problem by non restoring method: 1000 by 11.
+Explain 4-bit Carry look ahead adder.
+With a neat diagram, explain the logic circuit of restoring division.
+Write the steps of Booth’s algorithm.
+
+ Additional Questions 
+1. Explain different types of number representations with example and draw the addition/subtraction logic unit.
+2. Design sequential circuit binary multiplier and explain the concept of carry-save addition for multiplication operation.
+3. Explain IEEE standard for floating point numbers and show the IEEE floating point representation for 32-bit (single precision) number.
+4. Design the 16 bit carry look ahead adder using 4-bit adder and explain the generate and propagate functions for stage i.
+5. Explain Booth's algorithm to multiply two signed operands and perform the signed multiplication of numbers using booth multiplication and bit pair recording method.
+6. Design a logic circuit to perform addition/subtraction of two 4 bit numbers and explain Hardwired Control Unit with a neat block diagram.
+7. List out the actions needed to execute the instruction Add (R3), R1 and write the sequence of control steps needed for the execution of the same.
+
+module_5
+
+1. Explain single-bus organization of the data-path inside a processor with a neat diagram.
+2. Explain with a neat diagram, Organization of the ‘datapath inside a processor.
+1. With block diagram, explain the working of a microwave oven 
+2. Explain microwave oven with a neat diagram
+(i) Hardwired control
+(ii) Microprogrammed control
+(iii) Compare Hardwired control unit with micro-programmed control unit.
+1. Write the control sequence for execution of the instruction Add (R3), R1.
+2. State the steps required in execution of Add (R3), R1.
+3. Write and explain the control sequence for execution of an unconditional branch instruction.
+1. Explain the three-bus organization of the data path.
+2. With a neat diagram explain three bus organization of the datapath.
+With a neat diagram, explain a simple micro controller.
+1. Analyze the single bus architecture and write the sequence of control steps to execute the instruction ADD R1, R2, R3.
+2. Analyze the multiple bus architecture and write the sequence of control steps to execute the instruction ADD R1, R2, R3.
+3. Write the sequence of control steps for a single bus structure for the following instructions:
+   i) Add the contents of memory location NUM to register R1.
+   ii) Add the contents of memory location whose address is at memory location NUM to register R1.
+With a neat diagram, explain block diagram of a complete processor.
+Explain with a neat diagram, processor chips of an embedded processor.
+
+ Additional Questions 
+1. Explain single-bus organization of computer and fundamental concepts.
+2. Explain the information required to generate control signals and structure of micro programmed control unit.
+3. Explain pipeline, its 4 stages, instruction execution steps, and hardware organization.
+4. Discuss NUMA and UMA processors.
+5. Explain Flynn’s classification of computers.
+6. Explain attached array processor and SIMD array processor organization.
+7. Explain the evaluation of the expression Ai *Bi+Ci in pipelined mode.
+8. Draw and explain multiple bus organization and its advantages.
+9. Draw the block diagram of the control unit organization.
+10. Explain instruction pipelining and CPU pipeline.
+

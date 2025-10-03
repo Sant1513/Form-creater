@@ -1,0 +1,9 @@
+ a. Analyze the single bus architecture with a neat diagram and write the sequence of control
+steps to execute the instruction ADD R1, R2, R3 
+ b. Analyze the multiple bus architecture with a neat/diagram and write the sequence of control steps to execute the instruction ADD R1, R2, R3.
+ c. List the remote functionality of home telemetry system. 
+ a. Discuss the following in detail:
+(i) NUMA processor
+(ii) UMA processor,  
+ b. With a neat diagram, explain the working of a digital camera. 
+ c: Compare Hardwired control unit with a micro-programmed control unit. 

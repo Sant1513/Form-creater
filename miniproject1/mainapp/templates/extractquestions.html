@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Questions</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles4.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-box">
+                <img src="{% static 'extract-icon.png'%}" class="icon" alt="File Question Icon">
+            </div>
+            <div class="header-text">
+                <h2>Extracted Questions</h2>
+                <p>View, edit, and store extracted questions</p>
+            </div>
+            <div class="header-buttons">
+                <form id="upload-form" method="POST" enctype="multipart/form-data" action="{% url 'upload_pdf'%}">
+                    {% csrf_token %}
+                    <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" onchange="validateFile()" required>
+                    <button type="button" id="uploadBtn" class="button" disabled onclick="submitForm('upload')">Upload</button>
+
+                    <!-- Extract button -->
+                    <button type="button" id="extractBtn" class="button" disabled onclick="submitForm('extract')">Extract</button>
+
+                    <!-- Store button -->
+                    <button type="button" id="storeBtn" class="button-outline" disabled onclick="submitForm('store')">Store</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-area-wrapper">
+            <textarea id="extractedText" class="textarea" placeholder="The extracted text will appear here..."></textarea>
+        </div>
+
+        <div class="auto-scroll">
+            <label for="autoScroll">Auto-scroll</label>
+            <input type="checkbox" id="autoScroll" onclick="">
+        </div>
+    </div>
+
+    <script >
+        function validateFile() {
+            const fileInput = document.getElementById('pdfFile');
+            const file = fileInput.files[0];
+            const uploadBtn = document.getElementById('uploadBtn');
+
+            // Disable upload button initially
+            uploadBtn.disabled = true;
+
+            if (file) {
+                // Check if the file is a PDF
+                const fileType = file.type;
+
+                if (fileType !== 'application/pdf') {
+                    alert('Please upload a PDF file.');
+                } else if (fileInput.files.length > 1) {
+                    alert('You can only upload one file.');
+                } else {
+                    // Enable upload button if file is valid
+                    uploadBtn.disabled = false;
+                    alert('File is valid and ready to be uploaded.');
+                }
+            }
+        }
+        function submitForm(action) {
+            const formData = new FormData(document.getElementById('upload-form'));
+            formData.append('action', action); // Add action to form data
+            const extractBtn = document.getElementById('extractBtn');
+            const storeBtn = document.getElementById('storeBtn');
+            // Fetch CSRF token from the form
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            if (action==="store"){
+                var new_text=document.getElementById("extractedText").value;
+                formData.append('new_data', new_text);
+            }
+            // Make the AJAX request
+            fetch("{% url 'upload_pdf' %}", {
+                method: "POST",
+                headers: {
+                    'X-CSRFToken': csrfToken
+                },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                if (data.error){
+                    alert(data.error);
+                }else{
+                    if (data.action_per==="upload"){
+                        extractBtn.disabled=false;
+                        console.log("uploaded");
+                    }
+                    if (data.action_per==="extract"){
+                        storeBtn.disabled=false;
+                        document.getElementById('extractedText').value = data.data;
+                        console.log("extracted");
+                    }
+                    if (data.action_per==="store"){
+                        console.log("stored");
+                        storeBtn.disabled=true;
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                
+            });
+        }
+
+
+    </script>
+</body>
+</html>
+

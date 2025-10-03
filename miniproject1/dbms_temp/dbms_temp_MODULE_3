@@ -1,0 +1,28 @@
+ Define Database stored procedure. Explain creating and calling stored procedure with
+example. (0
+ What is SQLJ and how is it different from JDBC? (0
+ Consider the following schema :
+Sailors (Sid , Sname , rating , age)
+Boats (bid, bname, color)
+Reservers (Sid , bid , day)
+Write queries in SQL
+i) Find the ages of sailors whose name begins and ends with A and has atleast three
+characters.
+il) Find the age of the youngest sailor who is eligible to vote (i.e: is atleast 18 years old)
+for each rating level with atleast two such sailors.
+iii) Find the names of sailors who have not reserved a red boat. (use nested query).
+iv) Compute increments for the rating of persons who have sailed two different boats on the
+same day. (0
+ What is CGI? Why was CGI introduced? What are the disadvantages of an architecture
+using CGI script? (0
+ What is Dynamic SQL and how is it different from embedded SQL? Explain. (0
+ Consider the following schema :
+Sailors (Sid, Sname, rating , age)
+Boats (bid, bname, color)
+Reserves (Sid, bid, day).
+Write queries in SQL.
+i) Find the names of sailors who have reserved at least one boat.
+ii) Find sailors whose rating is better than some sailors called �Jennifer�. (Use nested
+query)
+iii) Find the average age of sailor for each rating level that at least two sailors.
+iv) Find the name and age of the oldest sailor. (0

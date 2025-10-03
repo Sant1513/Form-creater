@@ -1,0 +1,145 @@
+MODULE_1
+
+1.  Define the following terms
+i) Datamodel ii) Schema iii) Instance iv) Canned Transaction. 
+2.  Discuss the different types of user friendly interfaces and the types of user who typically use
+each. 
+3.  Draw an ER-diagram for AIRLINE database schema with atleast five entity types and
+specify primary key and structural constraints and weak entity type. 
+4.  Compare DBMS and early file systems , bringing out the major advantages of the database
+approach. 
+5.  With a neat block diagram, explain the architecture of a typical DBMS. 
+6.  Explain with the block diagram, the different phases of database design. 
+7.  Define DBMS. Explain all the basic operations that can be performed by DBMS on a
+database. 
+8.  With neat diagram, describe "ThreeSchema Architecture" and "Data Independence". 
+9.  Explain different types of attributes that occur in an E-R diagram model with example.
+
+10.  Discuss the different types of User friendly interfaces. 
+11.  Explain different types of attributes in ER model with suitable examples for each. 
+MODULE_2
+
+1.  Explain all types of outer join operations in relational algebra. Demonstrate the advantage of
+outer join operation over the inner join operation. 
+2.  Given the schema :
+Passenger (pid, pname, pgender, pcity)
+Agency (aid, anme, acity)
+Flight (fid, fdate, time, src, dest)
+Booking (pid, aid, fid, fdate)
+Give relation algebra expression for the following :
+1) Get the complete details of all flights to new Delhi
+ii) Find only the flight numbers for passenger with paid 123 for flights to Chennai before
+06/1 1/2020
+ili) Find the passenger names for those who do not have any bookings in any flights
+iv) Get the details of flights that are scheduled on both dates 01/12/2020 and 02/12/2020 at
+16:00 hours
+v) Find the details of all male passengers who are associated with jet agency. 
+3.  Problems based on relational operations in DBMS. Show the results of the relational operations based on the given data 
+4.  Define the following :
+i) Primary key ii) Super key
+ili) Foreign key iv) Candidate key. 
+5.  Enumerate the steps involved in converting the ER constructs to corresponding relational
+tables. 
+6.  Considering the following schema
+Sailors (sid, sname, rating, age)
+Boats (bid, bname, color)
+Reserves (sid, bid; day) .
+Write a relational algebra queries for the following :
+i) Find the names of sailors who have reserved boat#103.
+ii) Find the names of sailors who have reserved a red boat.
+iii) Find the names of sailors who have reserved a red or green boat.
+iv) Find the names of sailors who have reserved all boats. 
+7.  Write command that is used for table creation. Explain how constraints are specified in SQL
+during table creation, with suitable example. 
+8.  Explain the characteristics ofa relational model. 
+9.  List and explain the characteristics of Relations. 
+10.  Explain Unary relational operations with an example. 
+11.  Describe the steps of an algorithm for ER to Rational mapping with example. 
+12.  Write SQL query for the following database scheme :
+Employee(employee_name, street, city)
+Works (employee_name, company_name, salary)
+Company(company_name, city)
+Manages(employee_name, manager_name)
+1) Find the names, street address, and cities of residence for all employees who work for
+�First Bank Corporation� and earn more than $10,000
+ii) Find the names of all employees in the database who do not work for �First Bank
+Corporation�. Assume that all people work for exactly one company
+iii) Find the names of all employees in the database who earn more that every employee of
+�Small Bank Corporation�. Assume that all people work for at most one company
+iv) Find the name of the company that has the smallest payroll
+v) Find the names of all employees in the database who live in the same cities and on the
+same streets as do their managers. 
+MODULE_3
+
+1.  What is Dynamic SQL and how is it different from embedded SQL? Explain. 
+2.  What are assertions and triggers in SQL? Write a SQL program to create an assertion to
+specify the constraint that the salary of an employee must not be greater than the salary of
+the department. The employee works for in the COMPANY database. 
+3.  Consider the following schema :
+Sailors (Sid , Sname , rating , age)
+Boats (bid, bname, color)
+Reservers (Sid , bid , day)
+Write queries in SQL
+i) Find the ages of sailors whose name begins and ends with A and has atleast three
+characters.
+il) Find the age of the youngest sailor who is eligible to vote (i.e: is atleast 18 years old)
+for each rating level with atleast two such sailors.
+iii) Find the names of sailors who have not reserved a red boat. (use nested query).
+iv) Compute increments for the rating of persons who have sailed two different boats on the
+same day. 
+4.  Explain the concept of Create , Passing parameter , Call stored procedure from JDBC.
+
+5.  Write a trigger in SQL to call a stored procedure INFORM SUPERVISOR( ) whenever a
+new record is inserted or updated, check whether an employee's salary is greater than the
+salary of his or her direct supervisor in the COMPANY database. 
+6.  With real world examples, explain the following: 1) JDBC il) Correlated queries
+11) Stored Procedure iv) Schema change statements in SQL. 
+7.  What is SQLJ and how is it different from JDBC? 
+MODULE_4
+
+1.  Explain the types of update anomalies with examples. 
+2.  Explain Armstrong's rules of inference. 
+3.  What is equivalence of sets of functional dependencies? Check whether the following sets of
+F.D's are equivalent or not.
+FD, = {A> B,B->C, ABD}
+FD.= {A>B,B>=G,A>C,A>D} 
+4.  What is the need for normalization? Explain | NF, 2NF and 3NF with examples. 
+5.  What are the problems caused by insertion , updation and deletion anomalies? Discuss with
+an example. 
+6.  Explain the informal-design guidelines of a database. 
+7.  Using the minimal cover algorithm , find the minimal cover for the following FDs :
+F={AB->C,A->D, BD->C,D->BG,AE -> F }. 
+8.  What do you mean by Closure of Attributes? Write an algorithm to find closure of attributes.
+06 Marks
+
+3. Given below are two set of FDs for a relation R(A, B, C, D, E). Are they craalbat?
+1) A->B, AB->C,D->AC,D->E :
+ii) A>BC,D-> AE. 
+9.  Consider the following Relation R(A, B, C, DxE, F, G, H, I, J) with
+FDs{A, B}->C , A-> {D,E} , D-> J, B->{F, G} , F -> {H, J}.
+How would you Normalize completely? 
+10.  What do you mean by Multivalued Dependency? Explain the 4NF with example. 
+11.  What is the need for nonmalization? Explain 1 NF, 2NF and 3NF with examples. 
+12.  Write an algorithm to find the closure of functional dependency 'F'. 
+13.  Consider the universal relation: R= {A, B, C, D, E, F, G, H, I, J} and the set of functional
+dependencies. F= {AB>C,A�>4DE,B>F,F>GH,D->]J}.
+Determine whether each decomposition has the loss less join property with respect to F.
+D; = {Ri, Ro, Rs} ;)~=~-Ri= {A, B,C, D, E} ; Ro={B,F,G,H} : R;={D,], J}.
+
+MODULE_5
+
+1.  Explain the desirable properties of a transaction. 
+2.  With a neat diagram, explain the various states of a transaction execution. 
+3.  Briefly explain ARIES recovery process. ~ 
+4.  Explain the transaction supportin SQL. 
+5.  Discuss Two-Phase Locking Technique for concurrency control. 
+6.  Explain two phase locking mechanism with suitable example. 
+7.  Discuss on the database inconsistency problem. 
+8.  Consider the three transactions T1 , T2 and T3 and schedule S1 & S2 given below. Determine
+whether each schedule is.serializable or not? If serializable, write down the equivalent serial
+schedule (S). 
+9.  Describe the problems that occur when concurrent execution uncontrolled. Give examples. .
+
+10.  When deadlock. and starvation problem occurs? Explain how these problems can be
+resolved. 
+11.  Explain Binary locks and shared locks with algorithms. 

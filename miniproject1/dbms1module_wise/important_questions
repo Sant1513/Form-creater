@@ -1,0 +1,259 @@
+module_1
+
+1. Define the following terms: 
+   i) Weak entity type 
+   ii) Degree of a relationship type 
+   iii) Role names and recursive relationship 
+   iv) Cardinality 
+   v) Weak entity 
+   vi) Program data independence 
+   vii) Total participation 
+   viii) Value sets
+
+2. What are the responsibilities of the DBA and the database designers?
+
+3. Draw an ER diagram to represent the Election Information System.
+
+4. Define DBMS and explain its basic operations.
+
+5. Explain the different users of a database system.
+
+6. Describe the structural constraints of a database system with a suitable example.
+
+7. Explain all the E-R diagram notations.
+
+8. Describe the "Three-Schema Architecture" and "Data Independence" with a neat diagram.
+1. Discuss the main characteristics of the database approach and how it differs from traditional file systems.
+2. Compare DBMS and early file systems, bringing out the major advantages of the database approach.
+3. List and explain advantages of using DBMS approach.
+4. Explain with the block diagram, the different phases of database design.
+1. Draw an ER diagram for an AIRLINES database schema with at least five entities, specifying primary key and structural constraints.
+2. Draw an ER diagram for a Banking Database with at least four entities, attributes, and relationships, and specify 3NF tables.
+1. Explain types of end-users with suitable examples.
+2. Discuss the different types of user-friendly interfaces and the types of users who typically use each.
+i) Database 
+ii) DBMS catalog 
+iii) Entity 
+iv) Snapshot 
+v) Degree of a relationship 
+vi) Data model 
+vii) Schema 
+viii) Instance 
+ix) Canned Transaction
+1. Describe the 3-Schema Architecture.
+2. Why do we need mappings between schema levels?
+1. Explain the component module of DBMS and their interactions with the help of a neat diagram.
+2. Explain the architecture of a typical DBMS with a neat block diagram.
+What are the different types of attributes in an ER model?
+module_2
+
+1. Explain entity integrity and referential integrity constraints, and discuss their importance with examples.
+
+2. Discuss equijoin and natural join with suitable examples using relational algebra notation.
+
+3. Given the schema, write relation algebra expressions for the following:
+   i) Retrieve the name and address of all employees who work for the 'sports' department.
+   ii) Retrieve each department number, number of employers, and their average salary.
+   iii) List the project number, controlling department number, and department manager's last name, address, and birthdate.
+   iv) Retrieve the name of employees with 2 or more dependents.
+   v) List female employees from dno = 20 earning more than 50000.
+
+4. Discuss the different types of update operations on relational databases and explain how basic operations deal with constraint violations.
+
+5. Explain the data types available for attribute specification in SQL.
+
+6. Enumerate the steps involved in converting ER constructs to corresponding relational tables.
+
+7. Write relational algebraic queries for the following:
+   i) Find names of sailors who have reserved boat # 103.
+   ii) Find names of sailors who have reserved a red boat.
+   iii) Find names of sailors who have reserved a red or green boat.
+   iv) Find names of sailors who have reserved all boats.
+
+8. Explain the basic constraints that can be specified when a database table is created in SQL, with examples.
+
+9. Write SQL queries for the following relational schema:
+   i) List the items purchased by customer 'Prasanth'.
+   ii) Retrieve items supplied by all suppliers starting from 1st Jan 2019 to 30st Jan 2019.
+   iii) Get the details of customers whose total purchase of items worth more than 5000 rupees.
+   iv) List total sales amount, total items, average sale amount of all items.
+   v) Display customers who have not purchased any items.
+
+10. Give relation algebra expressions for the following:
+    i) Get the complete details of all flights to New Delhi.
+    ii) Find only the flight numbers for passenger with paid 123 for flights to Chennai before 06/11/2020.
+    iii) Find the passenger names for those who do not have any bookings in any flights.
+    iv) Get the details of flights that are scheduled on both dates 01/12/2020 and 02/12/2020 at 16:00 hours.
+    v) Find the details of all male passengers who are associated with Jet agency.
+
+11. Explain the four relational model constraints.
+
+12. Explain the steps of relational database design using ER to relational schema with a suitable example.
+
+13. Discuss the DIVISION operation of relational algebra.
+
+14. Explain the characteristics of a relational model.
+
+15. Explain all types of outer join operations in relational algebra and demonstrate the advantage of outer join operation over the inner join operation.
+
+16. Write relational algebra queries for the following:
+    i) Find the names of sailors who have reserved boat#103.
+    ii) Find the names of sailors who have reserved a red boat.
+    iii) Find the names of sailors who have reserved a red or green boat.
+    iv) Find the names of sailors who have reserved all boats.
+
+17. Discuss different types of update operations on relational databases and show an example of a violation of the referential and entity integrity in each of the update operation.
+
+18. Perform relational algebra like joins, search on the given relation tables.
+
+19. List and explain the characteristics of Relations.
+
+20. Explain the ER to relational mapping algorithm with suitable examples for each step.
+
+21. Write relational algebra queries for the following:
+    i) List the names of the people who work for the Company "Wipro" along with the cities they live in.
+    ii) Find the names of the persons who do not work for "Infosys".
+    iii) Find the people whose salaries are more than that of all of the "Oracle" employees.
+    iv) Find the persons who work and live in the same City.
+    v) Find the names of the companies that are located in every city where the Company Infosys is located.
+
+22. Write SQL queries for the following database scheme:
+    i) Find the names, street address, and cities of residence for all employees who work for 'First Bank Corporation' and earn more than $10,000.
+    ii) Find the names of all employees in the database who do not work for 'First Bank Corporation'.
+    iii) Find the names of all employees in the database who earn more than every employee of 'Small Bank Corporation'.
+    iv) Find the name of the company that has the smallest payroll.
+    v) Find the names of all employees in the database who live in the same cities and on the same streets as do their managers.
+
+23. Explain the basic operations that can change the states of relations in the database and how the basic operations deal with constraints violations.
+
+24. Give relation algebra expressions for the following:
+    i) Retrieve the name of the manager of each department.
+    ii) For each project retrieve the project number, project name, and number of employees who worked on that project.
+    iii) Retrieve the names of employees who work on all the projects controlled by department 5.
+    iv) Retrieve the name of employees who have no dependents.
+    v) Retrieve the number of Male and Female employees working in the Company.
+
+25. Describe the steps of an algorithm for ER to Rational mapping with an example.
+
+26. Write a command that is used for table creation and explain how constraints are specified in SQL during table creation, with a suitable example.
+1. Define the following terms: 
+   i) Key 
+   ii) Superkey 
+   iii) Candidate key 
+   iv) Primary key 
+   v) Foreign key
+What are the different forms of ALTER Commands? 
+What are examples of each form of ALTER Command?
+module_3
+
+1. Explain cursors and its properties in embedded SQL with suitable example.
+2. What is Dynamic SQL and how is it different from embedded SQL?
+3. Define stored procedure and explain creating and calling of stored procedure with an example.
+4. Explain JDBC with a real-world example.
+5. Explain correlated queries with a real-world example.
+6. Explain schema change statements in SQL with a real-world example.
+7. Illustrate insert, delete, update, alter and drop statements in SQL.
+8. Explain the basic data types available for attributes in SQL.
+9. Explain the concept of Create, Passing parameter, Call stored procedure from JDBC.
+10. Briefly explain types of JDBC drivers.
+11. What is SQLJ and how is it different from JDBC?
+1. Explain three-tier architecture with a neat diagram.
+2. Write a trigger in SQL to call a stored procedure and check an employee's salary.
+3. How do you create a view in SQL? Give examples. Can you update a view table?
+4. Write a complete high-level language program to display rows of a customer table with embedded SQL.
+5. Demonstrate the following constraints in SQL: NOT NULL, Primary key, Foreign key, Default, Check.
+6. Describe the six clauses in the syntax of an SQL retrieval query.
+7. How is a view created and dropped? What problems are associated with updating a view?
+8. Illustrate aggregate functions in SQL.
+9. What is CGI? Why was CGI introduced? What are the disadvantages of an architecture using CGI script?
+**Sailors and Boats Schema**
+
+1. Find the names of sailors who have reserved at least one boat.
+2. Find sailors whose rating is better than some sailors called 'Jennifer'.
+3. Find the average age of sailor for each rating level that at least two sailors.
+4. Find the name and age of the oldest sailor.
+5. Find the ages of sailors whose name begins and ends with A and has at least three characters.
+6. Find the age of the youngest sailor who is eligible to vote for each rating level with at least two such sailors.
+7. Find the names of sailors who have not reserved a red boat.
+8. Compute increments for the rating of persons who have sailed two different boats on the same day.
+
+**Salesman and Customer Schema**
+
+1. Find the name and numbers of all salesman who had more than one customer.
+2. Count the customers with grade above Bangalore's average.
+3. List all the salesman details whose first name is 'John'.
+4. List all salesman and indicate those who have and don't have customers in their cities.
+5. Use the delete operation by removing salesman with id = 2000.
+
+**Company Schema**
+
+1. For each department retrieve the department number, the number of employees in the department and their average salary.
+2. For each project on which more than 2 employees work, retrieve the project number, the project name and the number of employees who work on the project.
+3. For each project, retrieve the project number, the project name and the number of employees from department no. 5 who work on that project.
+4. For each department that has more than 5 employees, retrieve the department number and the number of its employees who are making more than $40,000 salary.
+5. Retrieve the names of an employees who have two or more dependents.
+
+**Bank Schema**
+
+1. Find all loan numbers for loans made at Cantonment branch with loan amounts greater than 20000.
+2. Find the names of all customers whose street address includes "Main".
+3. Find the average balance for each branch, if average balance is greater than 12000.
+4. Find the Customers who have an account at all the branches located in "Mysure".
+5. Find all Customers who do not have loan at the bank, but do have an account.
+1. How are triggers defined in SQL? 
+2. What are assertions and triggers in SQL? 
+3. Write a SQL program to create an assertion/triggers to specify the constraint that the salary of an employee must not be greater than the salary of the department/manager.
+module_4
+
+1. Define normal form. Explain 1NF, 2NF and 3NF with suitable examples.
+2. Write an algorithm for finding a minimal cover 'F' for a set of functional dependencies 'E'.
+3. Find the minimal cover for the given set of FD's G: {A -> BCDE, CD => E}.
+4. Check whether the FDs given hold or not for a relation R (A, B, C, D, E) and its instance.
+5. Using the minimal cover algorithm, find the minimal cover for the following FDs: F={AB->C,A->D, BD->C,D->BG,AE -> F}.
+6. Normalize a relation up to 3NF.
+7. Define Multi-valued Dependency and Join Dependency. Explain 4NF and SNF with examples.
+8. What is the need for normalization?
+9. What is equivalence of sets of functional dependencies? Check whether the following sets of F.D's are equivalent or not.
+10. Write an algorithm to find the closure of functional dependency 'F'.
+11. What do you mean by Closure of Attributes? Write an algorithm to find closure of attributes.
+12. Define First, Second, and Third Normal forms by taking an example.
+13. What is functional dependency? Write an algorithm to find minimal cover for set of functional dependencies.
+14. Consider the following Relation R(A, B, C, DxE, F, G, H, I, J) with FDs and normalize completely.
+15. Determine whether each decomposition has the lossless join property with respect to F.
+16. Write an algorithm to check whether decomposed relations are in 3NF with dependency preservation and non-additive join property.
+17. Decompose the relation R into 3NF with dependency preservation and non-additive join property.
+18. Define Normal Form. Explain 1NF, 2NF, and 3NF with suitable examples for each.
+1. Explain types of update anomalies with examples.
+2. Discuss insertion, deletion, and modification anomalies and why they are considered bad.
+3. What are the problems caused by insertion, updation, and deletion anomalies?
+1. Explain the informal guidelines used to determine the quality of relation schema design.
+Explain Armstrong's rules of inference.
+module_5
+
+1. Explain ARIES recovery algorithm with example.
+2. Explain NO-UNDO/REDO Recovery based on deferred update.
+3. Describe the database inconsistency problems: Lost update, dirty read, and blind write.
+4. What is 2PL? Explain with an example.
+5. How do you detect a deadlock during concurrent transaction execution?
+6. Explain the various database recovery techniques, with examples.
+7. Discuss on the database inconsistency problem.
+8. Explain Binary locks and shared locks with algorithms.
+9. Describe the problems that occur when concurrent execution is uncontrolled. Give examples.
+10. Explain how to resolve deadlock and starvation problems.
+11. Explain how shadow paging helps to recover from transaction failure.
+12. Explain ACID property of transaction and system log.
+13. Explain the anomalies that occur due to interleaved execution, with examples.
+1. Discuss the atomicity, durability, isolation and consistency preserving properties of a database transaction.
+2. Why concurrency control is needed, demonstrate with example.
+3. Discuss Two-Phase Locking Technique for concurrency control.
+4. Why concurrency control and recovery are needed in DBMS?
+5. Explain types of problems that may occur when two simple transactions run concurrently.
+6. Explain different types of locks used in concurrency control.
+1. Explain the state transition diagram of a transaction with a neat diagram.
+2. Explain the transaction support in SQL.
+1. Check whether the given schedule is conflict serializable or not.
+2. Determine whether each schedule (S1 & S2) is serializable or not.
+3. What is a schedule?
+4. Explain conflict serializability with an example.
+1. Define transaction and explain its desirable properties.
+2. Discuss ACID properties.

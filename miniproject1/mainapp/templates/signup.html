@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up for VTU QPRS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles2.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="logo" href="{% url 'landingpage'%}">
+        
+        <span class="icon">&#128214;</span>
+        <span class="logo-text">VTU QPRS</span>
+      </a>
+    </header>
+
+    <main class="main">
+      <div class="card">
+        <div class="card-content">
+          <div class="text-center">
+            <h1 class="title">Sign Up for VTU QPRS</h1>
+            <p class="subtitle">Create your account to get started</p>
+          </div>
+
+          <form class="form" id="signup-form" method="POST" action="{% url 'signup'%}">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name">User Name</label>
+              <input type="text" id="name" name="name"placeholder="Enter your full name" value="{{name}}" required>
+            </div>
+            <div class="form-group" id="email_section">
+              <label for="email">Email</label>
+              <div style="display: flex;">
+              <input type="email" id="email" name="email" placeholder="Enter your email" value="{{email}}" required>
+              <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+              {% if messages %}
+                  <ul class="messages" style="list-style-type: none;">
+                      {% for message in messages %}
+                          <li{% if message.tags %} class="{{ message.tags }}"{% endif %} style="color: red;">{{ message }}</li>
+                      {% endfor %}
+                  </ul>
+              {% endif %}
+              <button type="button" onclick="openverification()" class="open-button" style=" border-radius: 5px;padding: 10px;background-color: #000;color: white;margin-left: 10px;">Verify</button>
+              </div>
+              <div class="hidden" id="hidden_section"style="margin-top:15px;display:none;">
+                <input type='text' id="codevalue" name="code" placeholder='Enter the code sent to mail' required>
+                <!-- <p visible="hidden">Incorrect code</p> -->
+                <button type="button" onclick='verify_email()' class="check-button" style=" border-radius: 5px;padding: 10px;background-color: #000;color: white;margin-left: 10px;">Check</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Create a password"  required>
+            </div>
+            <div class="form-group">
+              <label>User Type</label>
+              <div class="radio-group">
+                <input type="radio" id="student" name="userType" value="student" {% if user_type == "student" %}checked{% endif %}>
+                <label for="student">Student</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="admin" name="userType" value="admin" {% if user_type == "admin" %}checked{% endif %}>
+                <label for="admin">Admin</label>
+              </div>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+
+          <div class="text-center mt-6">
+            <p class="login-prompt">
+             
+              Already have an account? <a href="{% url 'login'%}" class="login-link">Log in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">&copy; 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Privacy</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    function toggleCodeField(isVisible) {
+        const codeInput = document.getElementById('codevalue');
+        if (isVisible) {
+            codeInput.required = true; // Add required when visible
+            document.getElementById('hidden_section').style.display = 'block';
+        } else {
+            codeInput.required = false; // Remove required when hidden
+            document.getElementById('hidden_section').style.display = 'none';
+        }
+    }
+
+    function getCsrfToken() {
+        return document.getElementById('csrf-token').value;
+    }
+    const headers = {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': getCsrfToken(),
+    };
+    document.getElementById('signup-form').addEventListener('submit', function (e) {
+      const userTypeRadios = document.getElementsByName('userType');
+      let isChecked = false;
+  
+      for (const radio of userTypeRadios) {
+        if (radio.checked) {
+          isChecked = true;
+          break;
+        }
+      }
+  
+      if (!isChecked) {
+        e.preventDefault();
+        alert('Please select a user type.');
+      }
+    });
+    const sharedData = {}; 
+    function verify_email(){
+      const code=document.getElementById("codevalue").value
+      if (sharedData.value===code){
+        //make the email uneditable
+        const email_section=document.getElementById("email")
+        const code_section=document.getElementById("codevalue")
+        const verify_button=document.querySelector(".open-button")
+        const check_button=document.querySelector(".check-button")
+        email_section.readOnly=true;
+        code_section.readOnly=true;
+        verify_button.disabled=true;
+        check_button.disabled=true;
+      }else{
+        alert("wrong code retry once")
+      } 
+    }
+    
+    function openverification(){
+      
+      const email_value=document.getElementById('email').value;
+      const name=document.getElementById('name').value;
+      const verify_button=document.querySelector(".open-button")
+      
+      let role="";
+      if (document.getElementById('student').checked){
+        role="student"
+      }
+      else if (document.getElementById('admin').checked){
+        role="admin"
+      }
+      const email_detail = { "email": email_value,"name":name,"role":role};
+      console.log("verify_email entered")
+      fetch("{% url 'check_mail' %}", {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(email_detail) // Convert subject_name to JSON
+      })
+          .then(response => response.json())
+          .then(data => {
+              if (data.error) {
+                  alert(data.error);
+              } else if (data.messages === "existed") {
+                  alert("email already existed");
+              } else if(data.messages==="open"){
+                verify_button.textContent="Resend"
+                sharedData.value = data.code;
+                console.log(data.code)
+                toggleCodeField(true); 
+
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+          });
+      
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+ a. Explain the design of a four-bit carry,loo ahead adder. : 
+ b. Explain Booth’s algorithm. Multiply using Booth’s Pry ae, Se for the given
+Multiplicand: 0101101 and Multiplier : OO11110, 
+ c. Design sequential circuit binary. ‘multiplier with a neat block diagram. Realize the above
+circuit for binary multiplier to ealculate +13x+11. 
+ a. Solve using restoring ¢ Mielsion for the given i
+Dividend : 1000 ) and Divisor : 00011. Also, write the algorithm steps. 
+ b. Using carry-save ‘addition of Summands. CSA) for 4-bit operands. Perform multiplication
+between 45 and 63. 4 
+ c. Show and» explain the IEEE floating point representation for 32-bit (single precision)
+number. ° % An 7 

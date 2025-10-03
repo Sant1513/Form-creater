@@ -1,0 +1,110 @@
+ 7 a. Develop a decision tree to evaluate a new store option: ~~ 2
+'City-Size | Income | Local Investors | “Lohas Awarness_| Decision _|
+Big. |. High | Yes —Sss—sd(|$sSo® «sigh =~] Yes__—
+Medium
+Small Medium Yes High No
+Medium Yes
+Medium Medium No
+rBig___| Medium | No | Medium | No
+~~ eg ei 
+ b. List down the advantages and disadvantages of artificial neural networks. 
+ D OR
+8 a. Given that house price depends on the size.develop the regression model for the following
+data. Also find the house price when size 152000 sq. ft.
+{195100 | 1930." |
+| 156200 | 1660 _|
+| 256800 2240
+4 j ~~ 
+ b, «Find the affinity among the following items, Suggest which items can be marketed as a
+“single package for higher sales? Assume su pport level of 33% and confidence level of 50%.
+| »
+Bread |Butter_| Ketchup |
+(Milk [Bread [Butter |
+Cookies |
+healt) = = a
+[Butter |
+an
+> 
+ Differentiate between Linear, Non-linear and Logistic Regression models. 
+ 1 of 2
+10
+> 17CS82
+>"
+. '
+a
+b. Employ decision tree learning (Total error based) for the following dataset where the
+objective is to predict the Class Category-Loan approved or not (Cy & C;). Find out class for
+aa |
+2 = Medium [Com le
+| STM {Sports | Medium | Co“)
+4 [| Spore
+5
+6
+7
+8
+9
+10 Xury
+pT Sf M | Family | + Lage | Ci
+P12 tM Family] ExtraLarge | Ci _|
+P38 | MI Family, {Medium | Ci
+iar San kd
+15 ; Small
+
+ Explain the design. principles of ANN by. constructing a model for Paepée ANN.
+
+ What is unsupervised learning? DesBeitic 3 applications of cluster analysis. 
+ How does the Apriori aigorene for association rule mining works? Explain with example.
+
+ Describe the advantages and disadvantages of using Regression Models. 
+ Explain Decision tree and write.the algorithm to construct decision tree. 
+ Explain design principles of Artificial Neural Network. 
+ Explain Regression. List key steps of Regression. 
+ Explain Apriori Algorithms. 
+ What is Association Rule? Explain below given rules with suitable examples :
+i) Support ii) Confidence iii) Lift. 
+ What is Unsupervised Machine Learning concept? Explain K — Means clustering techniques,
+with suitable example. 
+ Write and explain Apriori Algorithm with example. 
+ List and explain the steps for developing an ANN (Artificial Neural Network). 
+ What is a splitting variable? Describe three criteria for choosing a splitting variable.
+
+ List some ofthe advantages and disadvantages of Regression Model. 
+ Create a decision tree for, the, following data set.
+[Ase | Hob hibuse | Credit Loan Approved
+es i
+No Yes
+Yes i Yes
+No i No
+1 of 2
+15CS82
+Fair
+Good
+Good
+Excellent
+Excellent
+Excellent
+Good ¢
+Good.
+Excellent
+Fair )
+Then solve the following problem using
+9 the model: >
+Loan Approved %/
+False pee Good
+
+ 8 a. Explain the design, principles of an Artificial Neural Network. 
+ b. How does aprior Algorithm work? Apply the same for the following example.
+Pub
+0 | Io, Iy
+Ip, Is
+lh, lo, ly
+ekg
+Io, [3
+ly, 1 43 gs
+Assume the supgtne punt 2; : 
+ 7 a. What is Association Rule? Explain below given rules with suitable examples :
+i) Support ii) Confidence iii) Lift. 
+ b. What is Unsupervised Machine Learning concept? Explain K — Means clustering techniques,
+with suitable example. 
+ 8 a. Write and explain Apriori Algorithm with example. 
+ List and explain the steps*for developing an ANN (Artificial Neural Network). 

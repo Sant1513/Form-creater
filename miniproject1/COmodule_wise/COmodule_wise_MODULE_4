@@ -1,0 +1,89 @@
+ a. Explain the design of a four-bit carry,look ahead adder. : 
+ b. Explain Booth’s algorithm. Multiply using Booth’s Multiplication for the given
+Multiplicand: 0101101 and Multiplier : OO11110, 
+ c. Design sequential circuit binary. ‘multiplier with a neat block diagram. Realize the above circuit for binary multiplier to calculate +13x+11. 
+ a. Solve using restoring division for the given i
+Dividend : 1000 ) and Divisor : 00011. Also, write the algorithm steps. 
+ b. Using carry-save ‘addition of Summands. (CSA) for 4-bit operands. Perform multiplication
+between 45 and 63. 4 
+ c. Show and» explain the IEEE floating point representation for 32-bit (single precision)
+number. 
+ 7 a. Perform the following “operations on the 5-bit signed numbers using 2’s complement
+representation system:
+i) (-10)+(-13)
+ii) (-10)—(+4)
+iii) (-3) + (-8)
+iv) (-10)-(+7) 
+ b. In a carry look ahead addition, explain the generate G(i) and propagate P(j) functions for stage i. Using, this design explain 4 bit carry look ahead adder. 
+ Perform the signed multiplication of numbers +13 and pa using booth multiplication and bit pair recording method. List the tables used. ‘ed 
+ Perform division of number 9 by 3(9 + 3) using the restoring division algorithm. Write the steps of algorithm used. 
+ Explain with a neat block diagram, 4-bit carry look ahead adder. 
+ Perform the following operations on the 4-bit signed numbers using 2°s complement
+representation system:
+(i) (-5)+(-2) (ii) (-7)—(-5) (iii), 7) -— 1) (iv) (+2) — (-3). 
+ Write the rules for addition and subtraction of ‘n” bit signed integers using 2°s complement
+representation system. 
+ OR :
+Perform the multiplication for +13 and —6 using Booth’s algorithm. 
+ Write algorithm that performs restoring division. Perform division using restoring algorithm.
+Dividend = (1000).
+Divisor = (0011): 
+ 7 a. Explain different types\.of number representations with example and draw the
+addition/substraction logic unit. 
+ b. Design and explain the 4-bit carry look-ahead adder. 
+ 8 a. Explain Booth algorithm. Perform (+13) x (—6) using Booth algorithm. 
+ b. Draw the circuit arrangement for binary division. Perform (1000) + (11) using restoring
+division, 
+ Explain 4-bit Corry look ahead adder. 
+ Solve the following explain by. Booth’s algorithm (1 0 0 1 1) multiplied by (0 1 0 1 1).
+
+ Write the steps of Booth’s algorithm. 
+ With a neat diagram. explain the logic circuit of restoring division. 
+ Explain the algorithm steps of non restoring method and solve the problem by non restoring
+method. 1000 by 11. 
+ Convert the following pairs of decimal numbers to 5 figure signed 2’s complement binary
+number and add them. State whether overflow has occurred.
+i) -5 and 7 ii) +10 and -13 iii) -14 and 11 
+ Draw 4-bit carry look ahead adder and explain. 
+ Explain Booth’s algorithm. Multiply +13 and -6 using Booth’s algorithm. 
+ Perform the division of 8 + 3 using restoring division, 
+ Explain the concept of carry-save addition for multiplication operation M x Q=P for 4-bit
+operands with diagram and example. 
+ Explain IEEE standard for floating point numbers. 
+ 7 a. Convert the following pairs of decimal numbers to 5-bit signed 2’s complement binary
+numbers and add them. State whether or not over flow occurs in each case:
+i) 5 and 10
+ii) -14and 11
+iii) -5 and7
+iv) -10 and -13 
+ Design the 16 bit carry look ahead adder using 4-bit adder, Also write the expression for
+Cur. 
+ Draw the two n-bit number x and y to perform addition/subtraction. 
+ With an example explain the Booths algorithm,to multiply two signed operands. 
+ Multiply each of the following pairs of signed 2’s complement number using the booth
+algorithm (A = multiplicand and B = multiplier)
+i) A=010111 and B= 110110
+ii) A=110011 and B= 101100
+iii) A=110101 andB=011011 =e
+iv) A=O00111landB=O011I1 » . 
+ With neat diagram, explain’4-bit carry look ahead adder. ay 
+ Design a logic circuit toperform addition/subtraction of two 4 bit numbers X and Y.
+: 
+ Perform multiplication for +14 and —6 using Booth’s algorithm. 
+ List out the actions needed to execute the instruction Add (R3), R1. Write the sequence of
+control’steps’ needed for the executionof the same. Also explain. 
+ With neat block diagram, explain Hardwired Control Unit. 
+ Explain 4-bit Corry look ahead adder. 
+ Solve the following explain by. Booth’s algorithm (1001 1) multiplied by (0 1 011).
+
+ Write the steps of Booth’s algorithm. 
+ With a neat diagramyexplain the logic circuit of restoring division. 
+ Explain the algorithm steps of non restoring method and solve the problem by non restoring
+method. 1000 by 11. 
+ Explain 4-bit Corry look ahead adder. 
+ Solve the following explain by. Booth’s algorithm (1001 1) multiplied by (0 1 011).
+
+ Write the steps of Booth’s algorithm. 
+ With a neat diagramyexplain the logic circuit of restoring division. 
+ Explain the algorithm steps of non restoring method and solve the problem by non restoring
+method. 1000 by 11. 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to VTU QPRS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen bg-gray-100">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a href="{% url 'landingpage'%}" class="flex items-center justify-center">
+        <img src="{% static 'book-icon.png'%}" alt="Book Icon" class="h-6 w-6 text-primary">
+        <span class="ml-2 text-lg font-semibold">VTU QPRS</span>
+      </a>
+    </header>
+    <main class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="card w-full max-w-md">
+        <div class="card-content pt-6">
+          <div class="flex flex-col space-y-2 text-center mb-6">
+            <h1 class="text-2xl font-bold">Forget Password</h1>
+            <p class="text-gray-500">Enter your Email to access the Password</p>
+          </div>
+          <input type="hidden" name="csrfmiddlewaretoken" id="csrf-token" value="{{ csrf_token }}">
+            <div class="space-y-2" >
+              <label for="email" class="block mb-1">Email</label>
+              <div style="display: flex;">
+                <input id="email" type="email" placeholder="Enter your email" name="email" value="{{email}}" required class="input"/>
+                <button onclick="sendcode()" id="btn1_section" style=" border-radius: 5px;padding: 10px;background-color: #000;color: white;margin-left: 10px;">Send</button>
+              </div>
+            </div>
+            <div class="space-y-2"id="passcode_section" style="visibility: hidden;">
+              <label for="passcode" class="block mb-1">Passcode</label>
+              <input id="passcode" type="text" placeholder="Enter your code sent to yout mail" name="passcode"  class="input"/>
+            </div>
+            
+            <button type="button" class="button w-full" id="btn2_section"onclick="verifycode()" style="visibility: hidden;">Verify Code</button>
+        </div>
+        <div class="space-y-2" id="password_section" style="visibility: hidden;margin-top: 15px;">
+          <label for="" class="block mb-1">Your Password</label>
+          <input id="password" type="text" name="passcode"  class="input"/>
+        </div>
+          <div class="mt-6 text-center">
+            <p class="text-sm text-gray-500">
+              Go back to Login? <a href="{% url 'login'%}" class="text-primary hover:underline">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-gray-500">© 2024 VTU Question Paper Recommender System. All rights reserved.</p>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a href="#" class="text-xs hover:underline underline-offset-4">Terms of Service</a>
+        <a href="#" class="text-xs hover:underline underline-offset-4">Privacy</a>
+      </nav>
+    </footer>
+  </div>
+  <script>
+        function getCsrfToken() {
+            return document.getElementById('csrf-token').value;
+        }
+        const headers = {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCsrfToken(),
+        };
+        const sharedData={}
+        function sendcode() {
+            // Define the subject name
+            // use this for drop down const subject_name = { subject: document.getElementById("subject-select").value };
+            const email_section=document.getElementById("email")
+            const email_detail = { "email": email_section.value };
+            console.log("gnerate entered")
+            fetch("{% url 'email_checking' %}", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(email_detail) // Convert subject_name to JSON
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error);
+                    } else if (data.messages === "not_present") {
+                        alert("Email is not present");
+                    } else if(data.messages==="open"){
+                        console.log("email present")
+                        sharedData.codevalue=data.code
+                        sharedData.password=data.password
+                        console.log(sharedData,password)
+                        const passcode_section=document.getElementById("passcode_section")
+                        const btn2_section=document.getElementById("btn2_section")
+                        const btn1_section=document.getElementById("btn1_section")
+                        btn1_section.textContent="Resend"
+                        passcode_section.style.visibility="visible"
+                        btn2_section.style.visibility="visible"
+                        email_section.readOnly=true
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        function verifycode(){
+            const entered_code=document.getElementById("passcode").value
+            const password_section=document.getElementById("password_section")
+            const password_input=document.getElementById("password")
+            if(sharedData.codevalue===entered_code){
+                password_section.style.visibility="visible"
+                password_input.value=sharedData.password
+                password_input.readOnly=true
+                const btn1_section=document.getElementById("btn1_section")
+                btn1_section.disabled=true
+                const passcode_value=document.getElementById("passcode")
+                passcode_value.readOnly=true
+                const btn2_section=document.getElementById("btn2_section")
+                btn1_section.disabled=true
+            }else{
+                alert("incorrect code")
+            }
+        }
+  </script>
+</body>
+</html>
+

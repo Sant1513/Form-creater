@@ -1,0 +1,8 @@
+ What are the anomalies occur due to interleave execution? Explain them with example.
+
+ Explain different types of locks used in concurrency control. 
+ Explain how shadow paging helps to recover from transaction failure. 
+ Explain ACID property of transaction and system log. 
+ When deadlock. and starvation problem occurs? Explain how these problems can be
+resolved. 
+ Explain ARIES recovery algorithm with example. 

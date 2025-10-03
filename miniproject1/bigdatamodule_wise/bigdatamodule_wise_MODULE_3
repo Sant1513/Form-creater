@@ -1,0 +1,42 @@
+ What is data warehousing? Explain the data warehouse architecture. 
+ How can raw data be cleansed and transformed before it can be used for data mining.
+
+ Explain various Business Intelligence applications. 
+ How can one eyaluate the results of data mining? 
+ Discuss how the data contributes to decision making in business intelligence. 
+ 6 a.
+b.
+7 a
+Justify the differences between datamart and data warehouse based on following :
+(i) Scope (ii) Target organization (ii!) Cost (iv) Approach (v) Time.
+: 
+ Consider three dimensions of data warehouse:
+Bank branch; time period, Loans and two measures accounts and Total balance, where total
+balance is outstanding loan amount from customers. Sketch star schema for above model.
+
+ Explain cross-industry standard process for data mining with a neat diagram. 
+ With a neat block diagram, describe the architecture of data warehouse. 
+ Briefly explain Business Intelligence. Explain Business Intelligence Data Mining Cycle with
+diagram. 
+ Write any four Business Intelligence Application for various sectors: 
+ Explain important Data Mining Techniques. : 
+ What do you understand by Data Visualization? List and describe the various charts used for
+data visualization. 
+ What is Business Intelligence? List the different BI applications and explain in detail any
+four applications. 
+ Draw and explain flow of BIDM cycle. Explain the Strategic and Operational decisions.
+
+ Explain CRISP DM cycle, with neat diagram. 
+ Define Data warehouse and illustrate design considerations for data warehouse. 
+ Write any four business Intelligence Application for various: sectors. 
+ Explain the star schema design of Data Warehousing with an’example. 
+ What is Confusion Matrix? 9 
+ OR ee
+Explaiit CRISP- DM cycle: witha a et diagram. , 
+ What do you understand by the term Data Visualization? How is it important in Big data
+Analytics? 
+ Differentiate betwee Data Mining and bid Warehousing. 
+ 5 a. List and explain any 3 areas of applications of Business Intelligence (BI). 
+ b. Define Data Warehouse. Explain design consideration for data warehouse. 
+ 6 a. What is Data Mining? What are supervised and unsupervised learning techniques? 
+ b. What is Data visualization? Explain how visualization tools are used. 

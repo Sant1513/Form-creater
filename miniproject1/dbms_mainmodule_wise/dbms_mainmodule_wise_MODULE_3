@@ -1,0 +1,13 @@
+ 5 a. Draw the organization of a 1Kx1 memory cell and explain it’s working. 
+ b, Explain the internal organization of a 16-Megabit dynamic RAM (DRAM) chip configured
+as 2Mx8 cells, witha neat! diagram. 
+ c. Assume a disk unit has 24 ‘recording surfaces. It has a total of 14,000 cylinders. There is an
+average of 400 sectors,per track. Each sector contains 512 bytes of data.
+(i) | What is the maximum number of bytes that can be stored in this unit?
+(ii) What is the data transfer rate in bytes per second at a rotational speed of 7200 rpm?
+(iii) _Using a 32-bit word, suggest a suitable scheme for specifying the disk address,
+“assuming that there are 512 bytes per sector. 
+ a. With a block diagram, explain the direct and set associative: mapping between cache and main memory. 
+ b. Draw a neat diagram of memory hierarchy in contemporary computer system. Also indicate relative variation of size, speed and cost per bit in the hierarchy. 
+ c. Explain with a block diagram, how the translation look aside buffer is used in implementing
+virtual memory. 

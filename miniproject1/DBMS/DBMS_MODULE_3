@@ -1,0 +1,149 @@
+1. Explain cursors and its properties in embedded SQL with suitable example. (05 Marks)
+
+2. How are triggers defined in SQL? Explain with example. (05 Marks)
+
+3. Illustrate insert, delete, update, alter and drop statements in SQL. (10 Marks)
+
+4. With an example, explain stored procedures In SQL. (05 Marks)
+
+5. Briefly explain types of JDBC drives. (05 Marks)
+
+6. Illustrate aggregate functions in SQL. (10 Marks)
+
+1. Define Database stored procedure. Explain creating and calling stored procedure with
+example. (06 Marks)
+
+2. What is SQLJ and how is it different from JDBC? (06 Marks)
+
+3. Consider the following schema :
+Sailors (Sid , Sname , rating , age)
+Boats (bid, bname, color)
+Reservers (Sid , bid , day)
+Write queries in SQL
+i) Find the ages of sailors whose name begins and ends with A and has atleast three
+characters.
+il) Find the age of the youngest sailor who is eligible to vote (i.e: is atleast 18 years old)
+for each rating level with atleast two such sailors.
+iii) Find the names of sailors who have not reserved a red boat. (use nested query).
+iv) Compute increments for the rating of persons who have sailed two different boats on the
+same day. (08 Marks)
+
+4. What is CGI? Why was CGI introduced? What are the disadvantages of an architecture
+using CGI script? (06 Marks)
+
+5. What is Dynamic SQL and how is it different from embedded SQL? Explain. (06 Marks)
+
+6. Consider the following schema :
+Sailors (Sid, Sname, rating , age)
+Boats (bid, bname, color)
+Reserves (Sid, bid, day).
+Write queries in SQL.
+i) Find the names of sailors who have reserved at least one boat.
+ii) Find sailors whose rating is better than some sailors called �Jennifer�. (Use nested
+query)
+iii) Find the average age of sailor for each rating level that at least two sailors.
+iv) Find the name and age of the oldest sailor. (08 Marks)
+
+
+1. Consider the following schema of order database
+SALESMAN (Salesmanid, name, city, commission);
+CUSTOMER (Custid, custname, city, grade, salesmanid);
+ORDERS (Ordno, purchaseamt, orddate, custid, salesmanid);
+Write SQL queries for the following:
+1) | Find the name and numbers of all salesman who had more than one customer.
+ii) | Count the customers with grade above Bangalore's average.
+ii) List all the salesman details whose first name is 'John'.
+iv) List all salesman and indicate those who have and don't have customers in their cities
+(Use UNION operation).
+v) Use the delete operation by removing salesman with id = 2000. (16 Marks)
+
+2. Explain three-tier architecture with neat diagram. (08 Marks)
+
+3. Define stored procedure. Explain creating and calling of stored procedure withan example.
+(08 Marks)
+
+1. What are assertions and triggers in SQL? Write a SQL program to create an assertion to
+specify the constraint that the salary of an employee must not be greater than the salary of
+the department. The employee works for in the COMPANY database. (07 Marks)
+
+2. Write a trigger in SQL to call a stored procedure INFORM SUPERVISOR( ) whenever a
+new record is inserted or updated, check whether an employee's salary is greater than the
+salary of his or her direct supervisor in the COMPANY database. (07 Marks)
+
+3. How do you create a view in SQL? Give examples. Can you update a view table? If yes,
+how? If not, why not? Discuss. (06 Marks)
+
+4. With real world examples, explain the following: 1) JDBC il) Correlated queries
+11) Stored Procedure iv) Schema change statements in SQL. (12 Marks)
+
+5. Write a complete high level language program (in Java or C) to display the rows of a
+customer table created in oracle having < custid , custname , balance > columns with
+embedded SQL. (08 Marks)
+
+1. Explain the basic data types available for attributes in SQL. ; (05 Marks)
+
+2. Demonstrate the following constraints in SQL with suitable example:
+i) NOTNULL ii) Primary key _ iii) Foreign key _iv)Default  v) Check.  (10 Marks)
+
+3. What are triggers? Explain with syntax and suitable example. (05 Marks)
+
+4. Explain the basic definition of a cursor and its usage with the help of a suitable example. (05 Marks)
+
+5. What are Assertions? Assuming suitable company schema write an Assertion for the
+condition.
+"The salary of an Employee must not be greater than the salary of the manager of the
+department that the employee works for". (05 Marks)
+
+6. Referring to the below mentioned company schema. Write the SQL queries for the following:
+Employee:
+| Fname | Lname | Minit BL Ssn | Bdate | Address | Sex : | Salary: | SuperSsn |Dno
+Department :
+| Dname | Dnumber | Mgr-Ssn | Mgr_start_date
+Department_location :
+Dnumber |Dlocation |
+Project
+Pname | Pnumber | Plocation | Dnum |
+Work_on :
+Essn | DNo |HRS
+Dependant : :
+Essn | Dependentname |Sex | Bdate _ | .
+i) For each departrnent retrieve the department number, the number of employees in the
+department and theiraverage salary.
+ii) For each project on which more than 2 employees work, retrieve the project number,
+the project name and the number of employees who work on the project.
+iii) For each project, retrieve the project number, the project name and the number of
+employees from department no. 5.who work on that project.
+iv) For each department that has more than 5 employees, retrieve the department number
+and the number of its employees who are making more than $40,000 salary.
+v) Retrieve the names of an employees who have two or more dependents. (10 Marks)
+
+1. Describe the six clauses.in the syntax of an SQL fetrievai query. Show what type of
+constructs can be specified in each of six clauses. Which of the six clauses are required and
+which are optional? (04 Marks)
+
+2. How are Triggefsand Assertions defined in SQL? Explain. (06 Marks)
+
+3. Consider the following tables :
+Branch (Bhame , Beity , Assets)
+Account (Accno , Bname , Accbal)
+Loan.(Loan no , Bname , LoanAmt)
+Customer (Cname , Cstreet , CCity)
+Depositer (Cname , Accnum) ,
+Borrow (Cname., Loannum).
+Write the following queries in SQL :
+i) Find all loan numbers for loans made at Cantonment branch with loan amounts greater
+than 20000. _
+ii) Find the names of all customers whose-street address includes "Main".
+iii) Find the average balance for each branch, if average balance is greater than 12000.
+iv) Find the Customers who have an account, at all the branches located in "Mysure".
+v) Findsall Customers who do*not have loan at the bank, but do have an account. (10 Marks)
+
+4. Howvis view created and-dtopped? What problems are associated with updating view?
+(06 Marks)
+
+5. What is Cursor? With program segment, explain retrieving of tuples with embedded SQL
+in C. (06 Marks)
+
+6. Explain the concept of Create , Passing parameter , Call stored procedure from JDBC.
+(08 Marks)
+

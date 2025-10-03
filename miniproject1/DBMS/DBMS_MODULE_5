@@ -1,0 +1,74 @@
+1. Define transaction. Discuss ACID properties. (05 Marks)
+
+2. With a neat diagram explain transition diagram of a transaction. (05 Marks)
+
+3. Why concurrency control and recovery are needed in DBMS? Explain types of problems
+that may occur when two simple transactions run concurrently. (10 Marks)
+
+4. When deadlock and starvation problem occur? Explain how these problems can be resolved. (10 Marks)
+
+5. Briefly discuss the two-phase locking techniques for concurrency control. (10 Marks)
+
+1. What are the anomalies occur due to interleave execution? Explain them with example.
+(08 Marks)
+
+2. Explain different types of locks used in concurrency control. (06 Marks)
+
+3. Explain how shadow paging helps to recover from transaction failure. (06 Marks)
+
+4. Explain ACID property of transaction and system log. (06 Marks)
+
+5. When deadlock. and starvation problem occurs? Explain how these problems can be
+resolved. (06 Marks)
+
+6. Explain ARIES recovery algorithm with example. (08 Marks)
+
+
+1. Discuss the atomicity, durability, isolation and consistency preserving properties of a
+database transaction. (08 Marks)
+
+2. Why concurrency control is needed demonstrate with example? (08 Marks)
+
+3. Discuss Two-Phase Locking Technique for concurrency control. (10 Marks)
+
+4. Explain NO-UNDO/REDO Recovery based on deferred update. (06 Marks)
+
+1. Describe the database inconsistency problems : Lost update , dirty read and blind write.
+(06 Marks)
+
+2. With a neat diagram, explain the various states of a transaction execution. (07 Marks)
+
+3. Check whether the below schedule is conflict serializable or not.
+{b2 , r2(X) , b1 , r1(X) , w1(X) , r1(Y), w1(Y) , w2(X), el,cl, e2, c2}. (07 Marks)
+
+4. What is 2PL? Explain with an example. (06 Marks)
+
+5. How do you detect a deadlock during concurrent transaction execution? (06 Marks)
+
+6. Explain the various database recovery techniques, with examples. (08 Marks)
+
+1. Explain the desirable properties of a transaction. (06 Marks)
+
+2. Explain with a neatdiagram, the state transition diagram of a transaction. (06 Marks)
+
+3. Explain two phase locking mechanism with suitable example. (08 Marks)
+
+4. Discuss on the database inconsistency problem. (10 Marks)
+
+5. Explain Binary locks and shared locks with algorithms. (10 Marks)
+
+1. Describe the problems that occur when concurrent execution uncontrolled. Give examples. .
+(06 Marks)
+
+2. Explain the transaction supportin SQL. (06 Marks)
+
+3. Consider the three transactions T1 , T2 and T3 and schedule S1 & S2 given below. Determine
+whether each schedule is.serializable or not? If serializable, write down the equivalent serial
+schedule (S). (08 Marks)
+
+4. What is Schedule? Explain Conflict and view Serializibility schedule with example.(08 Marks)
+
+5. Briefly discuss the two phase locking protocol used in concurrency control. (06 Marks)
+
+6. Briefly explain ARIES recovery process. ~ (06 Marks)
+

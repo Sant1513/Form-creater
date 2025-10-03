@@ -1,0 +1,93 @@
+ 1 a. Explain the basic operational concepts of a computer, with» ha neat block diagram. 
+ b. Explain basic input/output operations and write a program, snippet to read a character and print it on screen till newline i is. encountered. e 
+ c. A program contains 1000, instructions, out of that 25% instructions requires 4 clock cycles, 40% instructions require 5 5 clock cycles and remaining | requires 3 clock cycles for execution.
+Find the total time required to execute the program 1 running in a 1 GHz machine. 
+ OR»
+2 a. What are addressing modes? Explain thé: following addressing modes, with an example for
+each, (i) “Indirect mode (ii) Index mode
+(iii), Relative mode (iv), Auto increment mode. 
+ b. Explain shift and rotate operations \ with examples.  
+ c. Explain Big-Endian and Little-Endian method of byte-addressing with an example. 
+ 1 a. With a neat diagram, explain the’ different processor registers. 
+ . Explain the overall SPEC rating for the computer in a program suite. 
+ c. Explain one address , two address and three address instruction with examples. Also, use
+any of these instructions: to carry out C <- [A] + [B] : 
+ 2 a. What is an addressing imide? Explain the different addressing modes. With an example for each. . 
+ b. Explain shift and rotate operations, with” example. 
+ Draw and explain the connections between the processor and the main memory. 
+ What is performance? Explain basic performance equation and overall SPEC rating of computer. 
+ Explain Big-Endian and Little-Endian methods with examples. 
+ What is addressing mode? Explain any four addressing mode with example. 
+ Explain the Basic Instruction types with example. 
+ Explain the shift and rotate operations with examples. 
+ 1 a. With neat diagram, explain the basic operational concepts of computer. 
+ b. Explain:
+(i) Processor clock
+(ii) Clock rate
+(11) Basic performance equation
+(iv) Performance measurement - 
+ 2 a. Explain all addressing modes with assembler syntax. 
+ b. State and explain the possibilities of encoding of machine instruction of 32 bit word. 
+ With a neat diagram, explain basic operational concepts of a computer. 
+ What is performance measurement? Explain overall’ SPEC rating for the computer in a program suite. 
+ Draw single bus structure. Discuss about memory mapped I/O? Write a note on processor clock and clock rate. 
+ Explain with a neat diagram, Big Endian and Little Endian. 
+ Define addressing mode. Explain any 4 addressign modes with an example for each. (0
+ Write a program that can evaluate the expression ‘A x B + C x D in a single accumulator processor. Assume that the-processor has load, store, multiply and add instruction and that all values fit in the accumulator and with as neat block diagram, explain basic Input, Output operation. 
+ Explain the basic operation concepts of the computer with neat diagram. 
+ Write a program to evaluate the arithmetic statement Y = (A+B) * (C+D) _ using three address, two address and one address instruction. 
+ Explain the following :
+i) Big endian assignment ii) Little endian assignment 
+ What is an addressing mode? Explain any four types of addressing modes, with suitable
+example. 
+ How the input and output operations are performed by the processor? Write a program that
+reads line or characters and display it. ws 
+ 1 a. With a neat diagram, analyze the basic operational concept of a * computer. Give the operational steps (operational steps). -. 
+ b. What is performance measurement? Explain the overall SPEC pacing for the computer in a program suite. ‘ 
+ OR =f
+2 a. Define addressing mode; explain the various addressing mode with examples. 
+ b. Explain in detail, various shift and rotate instruction and example with neat diagram.
+
+ Draw and explain the connection between processor and memory with the respective registers. 
+ Assuming that the reference computer is Ultra SPARCIO workstation with 300 MHz Ultra
+SPARC -— Ili processors.A company has to purchase 500 new computers, hence ordered
+testing of a new computer with SPEC 2000. Following observations: were made:
+Runtime on reference computer | Runtime on new computer
+50 minutes 5 minutes
+75 minutes 4 minutes
+60 minutes 6 minutes
+30 minutes 3 minutes
+The company’s system manager will place the orders for purchasing new computers only if the overall SPEC rating is at least 12. After the said test, will the system manager place order for the purchase of new computers? 
+ Explain Big Endian and Little Endian methods of byte addressing. 
+ Explain the following:
+(i) Three address instructions (ii) Two address instructions
+(iii) One address instructions (iv) Zero address instructions 
+ What is an addressing mode? Registers R; and R2 ofa computer contain the decimal values
+1400 and.5000. What is the effective address of the’source operand in each of the following
+instructions?
+(i) Load 20(R1), R5 (ii) Move #3000,R5  _ (iii) Store 30(R1, R2), R5
+(iv) Add (R2)+, R5 (v) Subtract —(R1),.R5 
+ With a neat diagram, explain basic operational concepts of a computer. 
+ What is performance measurement? Explain overall’ SPEC rating for the computer in a
+program suite. 
+ Draw single bus‘structure. Discuss about memory mapped I/O? Write a note on processor
+clock and clock rate. 
+ Explain with a neat diagram, Big Endian and Little Endiany. 
+ Define addressing mode. Explain any 4 addressign modes with an example for each.
+ote (0
+ Write a program that can evaluate the expression ‘A x B + C x D‘in a single accumulator
+processor. Assume that the-processor has load, store, multiply and add instruction and that
+all values fit in the accumulator and with asneat block diagram, explain basic Input, Output
+operation. 
+ With a neat diagram, explain basic operational concepts of a computer. 
+ What is performance measurement? Explain overall’ SPEC rating for the computer in a
+program suite. 
+ Draw single bus‘structure. Discuss about memory mapped I/O? Write a note on processor
+clock and clock rate. 
+ Explain with a neat diagram, Big Endian and Little Endiany. 
+ Define addressing mode. Explain any 4 addressign modes with an example for each.
+ote (0
+ Write a program that can evaluate the expression ‘A x B + C x D‘in a single accumulator
+processor. Assume that the-processor has load, store, multiply and add instruction and that
+all values fit in the accumulator and with asneat block diagram, explain basic Input, Output
+operation. 

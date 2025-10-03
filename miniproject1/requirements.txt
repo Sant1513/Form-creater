@@ -1,0 +1,5 @@
+langchain_community
+pytesseract
+pdf2image
+# torch
+# transformer
